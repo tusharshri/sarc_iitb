@@ -1,0 +1,56 @@
+#create {
+	text-align: center;
+	padding: 40px;
+	font-size: 19px;
+}
+
+	#create a {
+		color: #141414;
+		text-decoration: none;
+	}
+
+	#create a:hover {
+		color: #040404;
+		text-decoration: underline;
+	}
+
+table {
+	margi: auto;
+	text-align: center;
+}
+
+	table tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	table tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	table tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	table tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	table th,td {
+		padding: 5px 20px;
+	}
+
+	table th {
+		padding-bottom: 20px;
+	}
+
+	table tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}

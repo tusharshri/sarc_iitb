@@ -1,0 +1,43 @@
+ * Change dbconnection.php
+ * Generate Key
+
+
+
+ * Change fonts, css, colors etc
+ * Add donated previously yes no kind option
+ * Make an upload interface for the database where one can easily upload the data
+ * Get STD Codes of all places ready.
+ * On clicking back to alumni button - 
+ * Send Mail
+ * Send Mail - Go Back
+ * CHECK ODM editor
+ * Lock/Unlock a volunteer login
+ * Adding the timezone feature
+
+
+ * NOT WORKING
+- DOB
+
+
+** RAVI CANTEEN COOL DRINKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * Send nitin mail asking for his personal iitbombay.org login credentials to know the fields they are collecting.
+
+

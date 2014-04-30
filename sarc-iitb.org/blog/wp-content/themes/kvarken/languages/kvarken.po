@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kvarken\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-16 09:16+0200\n"
+"PO-Revision-Date: 2013-07-16 09:17+0200\n"
+"Last-Translator: Carolina Nymark <myazalea@hotmail.com>\n"
+"Language-Team: layout.nu <myazalea@hotmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wordpress\\wp-content\\themes"
+"\\kvarken\n"
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/404.php:3
+msgid "Page not found"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:5
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:6
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:7
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:8
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:9
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:10
+msgid "Archive:"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:18
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:8
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/page.php:6
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:10
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:6
+msgid "Home"
+msgstr ""
+
+# there is a space after  :
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:34
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/comments.php:11
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/comments.php:17
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:25
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/page.php:9
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:26
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:19
+msgid "Pages: "
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:37
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:28
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:29
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:24
+#, php-format
+msgid ""
+"<a href=\"%1$s\">Written by</a> <a href=\"%3$s\" title=\"%4$s\" rel=\"author"
+"\">%5$s</a> <a href=\"%1$s\" rel=\"bookmark\">%2$s</a>. "
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:41
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:32
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:33
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:28
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:53
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:52
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:43
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:43
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:34
+#, php-format
+msgid "Category: %1s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:57
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:48
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:48
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:39
+#, php-format
+msgid "Tagged: %1$s. "
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:59
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:50
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/page.php:12
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:50
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:41
+msgid "Edit"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:66
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:57
+msgid "Next page &rarr;"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/archive.php:67
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/index.php:58
+msgid "&larr; Previous page"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/comments.php:3
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:28
+msgid "Header Navigation"
+msgstr ""
+
+# Description of header image
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:35
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:71
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:77
+msgid "Sunset"
+msgstr ""
+
+# Description of header image
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:41
+msgid "Stones"
+msgstr ""
+
+# Description of header image
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:47
+msgid "Flower"
+msgstr ""
+
+# Description of header image
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:53
+msgid "A cloudy day"
+msgstr ""
+
+# Description of header image
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:59
+msgid "Seagull"
+msgstr ""
+
+# Description of header image
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:65
+msgid "Birds On Rock"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:128
+msgid "Read more: "
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/functions.php:175
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/search.php:4
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wordpress\wp-content\themes\kvarken/single.php:50
+#, php-format
+msgid "About %s"
+msgstr ""

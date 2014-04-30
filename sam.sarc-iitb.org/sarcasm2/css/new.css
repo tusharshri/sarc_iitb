@@ -1,0 +1,58 @@
+ #mainpart2{
+				min-height: 600px;margin:0px auto;width: 970px; /*border: 0px solid red; */
+                     }
+            #left_nav{
+            	float:right; width:250px; min-height:450px;/* border: 1px solid red; */
+                    } 
+            #left_nav p{ padding:20px; line-height:30px;
+            	
+            }
+            #middle {
+            	 float:left; width:650px;min-height:600px; /* border: 1px solid blue; */
+            }
+            #form_part{
+            	min-width:350px;height:60px; margin-top:20px;
+            }
+            #content{
+            	text-align:center;padding: 10px; margin-top:10px; background:rgba(255,255,255,0.4); color:#737373; font-size: 30px; font-weight: bold; /*border:1px solid red; */
+            }
+            #content img{
+            	 height: 370px;
+				 width:600px;
+            	 margin:0px auto;
+            }
+            #content h2{
+            	 margin:160px auto;
+            	 padding:0px 30px;
+            	 text-align: center;
+            }
+            .dabbabox{
+			float: left;
+			margin-top: 20px;
+			width: 49%;
+			text-align: center;
+			height: 30px;
+			padding-top: 20px;
+			background-color: #999;
+			color: #fff;
+			font-size: 16px;
+			margin-right: 2px;
+			}
+                     
+            #second_part{
+			position:absolute;
+			top:65%;
+			left:43%;	
+		}	 
+            
+            #fb_request{
+			width:200px;
+			height:30px;
+			background:#3E3433;
+			color:white;
+			padding:10px 10px;
+			border:1px solid #3E3433;
+			border-radius:3px;	
+			margin:30px auto;
+		}
+		

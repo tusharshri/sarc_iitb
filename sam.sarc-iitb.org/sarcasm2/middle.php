@@ -1,0 +1,1 @@
+<div style="width:100%; height:30px; background:#00B5F9; color:#FFF; font-size:20px; margin-top:50px;"><center>Question <?php echo $_SESSION['level']; ?></center></div>

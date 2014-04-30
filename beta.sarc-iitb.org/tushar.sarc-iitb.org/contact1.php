@@ -1,0 +1,195 @@
+<?php include 'includes/head.php'; ?>
+
+
+<div class="wrapper" id="pagewrapper">
+
+	<div class="contentwrapper" id="contentwrapper" style="width:100%; margin-left:0; padding-top:0px;">
+		<!-- Content Goes Here -->
+		<section id="section">
+				
+				<ul id="da-thumbs" class="da-thumbs">
+					<h3>Overall Cordinator</h3>
+					
+					<li class="left" style="left:410px">
+						<a href="http://dribbble.com/shots/505046-Menu">
+							<img class="imageenlarge" src="images/1.jpg" />
+							<div><span>Tejas Kolhe<br/>Hostel-7/260<br/>tejas.kolhe411@gmail.com<br/>+91 9860828437</span></div>
+						</a>
+					</li><div class="clear"></div>
+					<h3>Events</h3>
+					<li class="left movable">
+						<a href="http://dribbble.com/shots/504336-TN-Aquarium">
+							<img class="imageenlarge" src="images/2.jpg" />
+							<div><span>Mounika  Maddula<br/>Hostel-10/N 212<br/>mounika2805@gmail.com<br/>+91-8652314885</span></div>
+						</a>
+					</li>
+					<li class="left movable">
+						<a href="http://dribbble.com/shots/504197-Mr-Crabs">
+							<img class="imageenlarge" src="images/3.jpg" />
+							<div><span>Bharat Gyanchandani<br/>bharatgyanchandani001@gmail.com<br/>+91-9004957881</span></div>
+						</a>
+					</li>
+					<li class="left movable">
+						<a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
+							<img class="imageenlarge" src="images/4.jpg" />
+							<div><span>Akshay Joshi <br/>Hostel-5/271<br/>akshay7194@gmail.com<br/>+91-8879006226</span></div>
+						</a>
+					</li>
+					<li class="left movable">	
+						<a href="http://dribbble.com/shots/503058-Ice-Cream-nom-nom">
+							<img class="imageenlarge" src="images/5.jpg" />
+							<div><span>Sachin Lokhande <br/>Hostel-6/126<br/>sachinmlok@gmail.com<br/>+91-8879446034</span></div>
+						</a>
+					</li>
+					<li class="left movable">
+						<a href="http://dribbble.com/shots/502927-My-Muse">
+							<img class="imageenlarge" src="images/6.jpg" />
+							<div><span>Nawroz Minsaria<br/>Hostel-9/317<br/>nawroz.minsaria@gmail.com<br/>+91-9920987997</span></div>
+						</a>
+					</li>
+					<li class="left movable">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Ananya <br/>Hostel-10/512<br/>99ananya@gmail.com<br/>+91-9969800309</span></div>
+						</a>
+					</li><div class="clear"></div>
+					<table width="100%;">
+						<tr>
+							<td width="56%;"><h3>Hostel and Department Affairs</h3>
+							</td>
+							<td width="14%;">
+							</td>
+							<td width="30%;"><h3>Operations</h3>
+							</td>
+						</tr>
+					</table>
+					<li class="left">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Divyansh Bordia<br/>Hostel-6/162<br/>divyanshbordia@gmail.com<br/>+91-7738987385</span></div>
+						</a>
+					</li>
+					<li class="left">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Punit Malik <br/>Hostel-12/B 002<br/>punitmalik21@gmail.com<br/>+91-9167784898</span></div>
+						</a>
+					</li>
+					<li class="left">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Vishwas Goel<br/>Hostel-9/209<br/>vishwas.goel1@gmail.com<br/>+91-8097636319</span></div>
+						</a>
+					</li>
+					<li class="left">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Mayank Sharma<br/>Hostel-9/354<br/>mayankomayank@gmail.com<br/>+91-9619417717</span></div>
+						</a>
+					</li>
+					<li class="left" style="float:right;">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Piyush Soni<br/>Hostel-13/C 001<br/>piyushsoni629@gmail.com<br/>+91-7738980783</span></div>
+						</a>
+					</li>
+					<li class="left" style="float:right;">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Nikhil Gupta <br/>Hostel-3/175<br/>guptanikhil28@gmail.com<br/>+91-9004192315</span></div>
+						</a>
+					</li><div class="clear"></div>
+					<table width="100%;">
+						<tr>
+							<td width="17%">
+							</td>
+							<td width="25%"><h3>Public Relations</h3>
+							</td>
+							<td width="28%">
+							</td>
+							<td width="30%"><h3>ASMP</h3>
+							</td>
+						</tr>
+					</table>
+					<li class="left trio">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Durgaprasad Mujumdar<br/>Hostel-4/132<br/>durgaprasad.m92@gmail.com<br/>+91-7738529725</span></div>
+						</a>
+					</li>
+					<li class="left trio">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Pradeep Biradar <br/>Hostel-6/86<br/>pradeepbiradarrocks@gmail.com<br/>+91-9167516925</span></div>
+						</a>
+					</li>
+					<li class="left trio">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Gaurav Singh <br/>Hostel-13/A 002<br/>gauravsawesome@gmail.com<br/>+91-7738926137</span></div>
+						</a>
+					</li>
+					</li>
+					<li class="left" style="float:right;">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Tuhina Ghanty<br/>Hostel-10/N 311<br/>tuhina.26oct@gmail.com<br/>+91-9869610095</span></div>
+						</a>
+					</li>
+					<li class="left" style="float:right;">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Rohit Wakode <br/>Hostel-8/148<br/>rohitnwakode@gmail.com<br/>+91-9004769371</span></div>
+						</a>
+					</li><div class="clear"></div>
+					<table width="100%;">
+						<tr>
+							<td width="17%">
+							</td>
+							<td width="25%"><h3>Web &amp; Softwares</h3>
+							</td>
+							<td width="28%">
+							</td>
+							<td width="30%"><h3>Design</h3>
+							</td>
+						</tr>
+					</table>
+					<li class="left trio">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Tushar Shrivastava<br/>Hostel-7/260<br/>tushariitb2@gmail.com<br/>+91-9869842610</span></div>
+						</a>
+					</li>
+					<li class="left trio">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Siddhant Mittal<br/>Hostel-5/212<br/>siddhantiitbmittal3@gmail.com<br/>+91-9167467405</span></div>
+						</a>
+					</li>
+					<li class="left trio">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Prannoy Mupparaju<br/>Hostel-2/286<br/>m.prannoy@gmail.com<br/>+91-9167649592</span></div>
+						</a>
+					</li>
+					</li>
+					<li class="left" style="float:right;">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Nishith Kumar Sahoo<br/>Hostel-5/145<br/>nishith.sahoo@gmail.com<br/>+91-9833570810</span></div>
+						</a>
+					</li>
+					<li class="left" style="float:right;">
+						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
+							<img class="imageenlarge" src="images/7.jpg" />
+							<div><span>Pramod  Bhakhar<br/>Hostel-7/166<br/>prambhakt2010@gmail.com<br/>+91-9833424703</span></div>
+						</a>
+					</li><div class="clear"></div>
+				</ul>
+			</section>
+	</div>
+		<!-- Content Ends Here -->
+		<div class="clear"></div>
+</div>
+
+<?php include 'includes/foot.php'; ?>

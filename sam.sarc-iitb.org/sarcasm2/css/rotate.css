@@ -1,0 +1,70 @@
+/*@-webkit-keyframes rotate {
+  from {
+	  transform:rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+  }
+  to { 
+  	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+  }
+}
+#loading img
+{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         8s; 
+    -webkit-animation-iteration-count:  200;
+    -webkit-animation-timing-function: linear;
+	-moz-animation-name:             rotate; 
+    -moz-animation-duration:         8s; 
+    -moz-animation-iteration-count:  200;
+    -moz-animation-timing-function: linear;
+	-o-animation-name:             rotate; 
+    -o-animation-duration:         8s; 
+    -o-animation-iteration-count:  200;
+    -o-animation-timing-function: linear;
+    }*/
+ #loading{
+ 	margin-left:0;
+	width:144px;
+/*	border: 2px solid red; */
+	} 
+  #logo_text{
+  position:relative;
+  margin: -114px 36px;
+  width:77px;
+  text-align:center;
+  vertical-align:middle;
+  height: 75px;
+ /* border: 1px solid green;  */
+}
+
+#logo_text p{
+  margin-top:53px;
+  margin-right: 40px;
+  vertical-align:middle;
+  line-height: 12px;
+  font-size:15px;
+ font-family:Open sans-Regular;
+  font-weight:100px; 
+  color: White; 
+}
+
+#samlogodiv{
+	   /* border:1px solid red; */
+	    margin-left:10%;
+	    width:143px;
+	    /*height:150px;*/
+           }
+
+#samlogodiv a {
+	
+	text-decoration:none;
+                }            
+
+

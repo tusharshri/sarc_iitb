@@ -1,0 +1,42 @@
+.agendaconfirmationlist {
+	margin: auto;
+}
+
+	.agendaconfirmationlist th,td {
+		text-align: center;
+		padding: 5px 20px;
+	}
+
+	.agendaconfirmationlist tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	.agendaconfirmationlist tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	.agendaconfirmationlist tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	.agendaconfirmationlist tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	.agendaconfirmationlist tr:nth-child(2n).head:hover {
+		color: #D0EC11;
+		background: #505050;
+		cursor: inherit;
+	}
+
+	.agendaconfirmationlist tr:nth-child(2n+1).head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}

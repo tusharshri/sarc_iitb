@@ -1,0 +1,168 @@
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#body {
+	margin: 0px;
+	background: white;    
+    height:95%;
+}
+
+#body iframe{
+    width:99.5%;
+}
+
+	#pmenu {
+		background: #141414;
+		padding: 24px;
+		height: 24px;
+		font-size: 13px;
+		font-family: Helvetica;
+	}
+
+		#pmenu ul.pmenu {
+			font-weight: bold;
+			position: relative;
+			color: white;
+			float: right;
+			margin-right: 40px;
+			list-style-type: none;
+            padding-top: 13px;
+		}
+
+			#pmenu ul.pmenu li {
+				margin-left: 1px;
+				text-align: center;
+				cursor: pointer;
+				float: left;
+				height: 24px;
+				padding-top: 10px;
+				min-width: 120px;
+				background: url("../images/menu-bg.jpg") 0px 0px;
+			}
+
+			#pmenu ul.pmenu li:hover {
+				background: url("../images/menu-bg.jpg") 0px -34px;
+			}
+
+			#pmenu ul.pmenu li.selected {
+				background: url("../images/menu-bg.jpg") 0px -68px;
+			}
+	
+			#pmenu ul.pmenu li a{
+				padding: 10px 20px 10px 20px;
+			}
+
+			#pmenu ul.smenu {
+				position: absolute;
+				margin-top: 9px;
+				display: none;
+			}
+			
+			#pmenu ul.smenu li {
+                list-style-type:none;
+				text-align: left;
+				background: url("../images/menu-bg.jpg") 0px 0px;
+			}
+			
+			#pmenu ul.smenu li:hover {
+				background: url("../images/menu-bg.jpg") 0px -34px;
+			}
+
+			#pmenu ul.smenu li a{
+				padding: 0px 8px;
+			}
+
+    
+	#tmenu {
+		background: #141414;
+		height: 15px;
+		font-size: 10px;
+		font-family: Helvetica;
+	}
+
+		#tmenu ul {
+			position: absolute;
+			color: white;
+			list-style-type: none;
+            margin-left: 70%;
+		}
+
+			#tmenu ul li {
+				margin-left: 1px;
+				text-align: center;
+				cursor: pointer;
+				float: left;
+				height: 15px;
+				padding-top: 2px;
+				min-width: 70px;
+				background: url("../images/menu-bg.jpg") 0px 0px;
+			}
+
+			#tmenu ul li:hover {
+				background: url("../images/menu-bg.jpg") 0px -34px;
+			}
+
+			#tmenu ul li.selected {
+				background: url("../images/menu-bg.jpg") 0px -68px;
+			}
+	
+			#tmenu ul li a{
+                padding: 2px 20px;
+			}
+			
+			.notificationdiv{
+			position: absolute;
+			color: #444;
+			background-color: #C5D256;
+			border-radius: 10px;
+			width: 200px;
+			height: 500px;
+			left: 70%;
+			top: 20px;
+			z-index: 3;
+			display: none;
+			padding-left: 10px;
+			padding-right: 10px;
+			border: 3px dashed #666;
+			}
+				.closenotification{
+					color: #333;
+					margin-left: 186px;
+					cursor:pointer;
+				}
+				.notificationtext{
+					display: block;
+					margin-bottom: 5px;
+					border-bottom: 1px solid #FFF;
+					font-family: arial;
+					font-size: 13;
+				}
+
+	#bar {
+		margin-top: 0px;
+		background: #C5D256;
+		height: 30px;
+	}
+	
+		#phonathon {
+			height: 108px;
+			background: url("../images/phone.png");
+			width: 120px;
+			position: absolute;
+			top: 30px;
+			left: 10px;
+		}
+	
+	#content {
+		width: 100%;
+		height: 80%;
+	}
+	
+	.button_style{
+		width:150px; height:29px; background:green; color:white; font-weight:bold; border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+            border-top-left-radius:5px;	
+	}

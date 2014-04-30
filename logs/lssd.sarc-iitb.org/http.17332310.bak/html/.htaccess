@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/sarc_iitb/logs/lssd.sarc-iitb.org/http.17332310/html/.htpasswd
+AuthName "Statistics Area"
+require valid-user

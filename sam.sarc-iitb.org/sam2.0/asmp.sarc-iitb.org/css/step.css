@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nametable input {
+	width: 200px;
+}
+
+#nametable td {
+	text-align: center;
+}
+
+#nametable tr.info {
+	font-size: 14px;
+	color: #888;
+}
+
+#nametable select {
+	margin-left: 0px;
+}
+
+#next .asterix {
+	color: orange;
+}
+
+tr.info td {
+	font-size: 14px;
+	color: #888;
+}
+
+#specify {
+	font-size: 14px;
+	color: #888;
+	display: inline;
+}
+
+#others {
+	margin-top: 20px;
+	margin-left: 2px;
+	width: 300px;
+}
+
+#bar {
+	margin-left: -10px;
+	margin-right: -8px;
+	background-image: url('../images/barbg.png');
+	background-repeat: repeat-x;
+	/*margin-top: 15px;*/
+	padding: 10px;
+}
+
+#registration {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#bar ul {
+	display: inline;
+	height: 20px;
+}
+
+#bar ul li {
+	padding: 12px 16px 12px 17px;
+	background: url('../images/numberbg.png') no-repeat;
+	display: inline;
+	color: white;
+}
+
+#bar ul li.selected {
+	background: url('../images/numberbg-selected.png') no-repeat;
+	color: white;
+}
+
+#content {
+	width: 900px;
+	margin: auto;
+}
+
+#contenttopic {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#contentbody {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+#nametable input {
+	height: 30px;
+	/*width: 600px;*/
+	font-size: 16px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#submit {
+	width: 200px;
+}
+
+td.detailname {
+	text-align: right;
+	padding-right: 50px;
+}
+
+#submit {
+	margin-top: 20px;
+	float: right;
+}
+
+.asterix {
+	color: red;
+}
+
+.invaliddetailname {
+	color: red;
+}
+
+input.invalid {
+	background: #FF9;
+	border: 2px red inset;
+}
+
+textarea.invalid {
+	background: #FF9;
+	border: 2px red inset;
+}
+
+#back {
+	width: 200px;
+	margin-top: 5px;
+}

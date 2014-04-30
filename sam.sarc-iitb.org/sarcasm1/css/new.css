@@ -1,0 +1,54 @@
+ #mainpart2{
+            	background: #EEE;min-height: 600px;margin:0px auto;width: 970px; /*border: 0px solid red; */
+                     }
+            #left_nav{
+            	float:left; width:183px; min-height:450px;/* border: 1px solid red; */
+                    } 
+            #left_nav p{ padding:20px; line-height:30px;
+            	
+            }
+            #middle {
+            	float:left; width:750px;min-height:600px; /* border: 1px solid blue; */
+            }
+            #form_part{
+            	min-width:350px;height:60px; border:0px solid green; padding:30px;margin:10px 132px;
+            }
+            #content{
+            	margin:10px auto; width:680px; /*border:1px solid red; */
+            }
+            #content img{
+            	 height: 370px;
+            	 margin:0px auto;
+            }
+            #content h2{
+            	 margin:160px auto;
+            	 padding:0px 30px;
+            	 text-align: center;
+            }
+            
+            #left_nav{
+            	float:left; width:183px; min-height:450px;  /* border: 1px solid red; */
+                     }
+            #left_nav p{ padding:20px; line-height:30px;
+            	
+            }
+            #middle {
+            	float:left; width:750px;min-height:600px;/* border: 1px solid blue; */
+            }
+            #form_part{
+            	min-width:350px;height:60px;  /*border:0px solid green;  */ padding:30px;margin:10px 132px;
+            }
+           
+            	 
+            
+            #fb_request{
+			width:200px;
+			height:30px;
+			background:#3E3433;
+			color:white;
+			padding:10px 10px;
+			border:1px solid #3E3433;
+			border-radius:3px;	
+			margin:30px;
+		}
+		

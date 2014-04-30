@@ -1,0 +1,110 @@
+#contacted {
+	margin: auto;
+}
+
+	#contacted th,td {
+		text-align: center;
+		padding: 5px 20px;
+	}
+
+	#contacted tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	#contacted tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	#contacted tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	#contacted tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	#contacted tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}
+
+#mailed {
+	margin: auto;
+}
+
+	#mailed th,td {
+		text-align: center;
+		padding: 5px 20px;
+	}
+
+	#mailed tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	#mailed tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	#mailed tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	#mailed tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	#mailed tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}
+
+#callagain {
+	margin: auto;
+}
+
+	#callagain th,td {
+		text-align: center;
+		padding: 5px 20px;
+	}
+
+	#callagain tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	#callagain tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	#callagain tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	#callagain tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	#callagain tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}

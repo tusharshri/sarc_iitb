@@ -1,0 +1,27 @@
+#mydetails_table {
+	margin: auto;
+	margin-top: 20px;
+}
+
+	#mydetails_table td:nth-child(2n+1) {
+		background: #505050;
+		color: #C5D256;
+	}
+	
+	#mydetails_table td:nth-child(2n) {
+		background: #C5D256;
+		color: #505050;
+	}
+
+	#mydetails td {
+		padding: 5px 20px;
+	}
+	img#volimage{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#volimage{
+		margin-left:auto;
+		margin-right:auto;
+	}

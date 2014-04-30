@@ -1,0 +1,7 @@
+Author: Reality Software
+Website: http://www.realitysoftware.ca
+
+This is a free WordPress theme released under the Creative Commons Attribution 3.0 license, 
+which means you can use it in any way you want provided you keep links to the author intact.
+
+License: http://creativecommons.org/licenses/by/3.0/

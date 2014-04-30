@@ -1,0 +1,66 @@
+/*  
+Theme Name:Papira
+Theme URI:http://www.realitysoftware.ca
+Description:WordPress theme designed by <a href="http://www.realitysoftware.ca">Reality Software</a>.
+Version:1.0
+Author:Reality Software
+Author URI:http://www.realitysoftware.ca
+*/
+
+html {background:#53533a;}
+body {margin:0; font-size:14px; line-height:20px; font-family:Arial, Helvetica, sans-serif; background:url(images/body_bckg.jpg) repeat-y center;}
+a {color:#936307; text-decoration:none;}
+a:hover {color:#666666;}
+
+#all {background:url(images/container_bckg.jpg) no-repeat top center;}
+#container {width:1000px; margin:0 auto; background:url(images/container_bckg.jpg) no-repeat top center;}
+
+#logo {height:50px; margin:0 60px; padding:80px 0 0 85px; background:url(images/logo.gif) no-repeat 32px 70px;}
+#logo a {text-decoration:none; font-size:24px; color:#000000; font-family:"Times New Roman", Times, serif; font-weight:bold;}
+#menu {height:40px; margin:0 60px;}
+#menu ul {margin:0; padding:0;}
+#menu ul li {display:inline-block; float:left; list-style:none; text-align:center; color:#936307;}
+#menu a {padding:0 20px; font-family:"Times New Roman", Times, serif; font-size:20px; text-transform:lowercase; text-decoration:none; color:#936307;}
+#menu a:hover {color:#666666;}
+#menu .page_item {border-left:1px solid #936307;}
+
+#main {background:url(images/main_bottom.jpg) bottom center no-repeat; float:left; margin:0 60px;}
+#text {margin:0 270px 0 20px;}
+#text h1 {margin:20px 0 20px 0; font-family:"Times New Roman", Times, serif; font-size:1.5em; font-weight:normal; line-height:normal;}
+#text h2 {margin:20px 0 4px 0; font-family:"Times New Roman", Times, serif; font-size:1.8em;}
+#text h2 a {color:#000000; text-decoration:none;}
+#text h2 a:hover {color:#666666;}
+#text h3 {margin:20px 0 5px 0; font-family:"Times New Roman", Times, serif; font-size:1.3em;}
+#text ul, #text ol {padding:0; margin:10px 0 10px 40px;}
+#text ul li {list-style:none; padding-left:20px; background:url(images/li.gif) no-repeat 0 7px;}
+#text ol li {margin-left:20px;}
+#text p {margin:10px 0;}
+#sidebar {float:right; width:180px; padding:0 40px 0 10px; font-size:13px;}
+#sidebar h2 {margin:25px 0 5px 0; font-family:"Times New Roman", Times, serif; font-size:22px;}
+#sidebar ul {margin:0px; padding:0px;}
+#sidebar li {list-style:none;}
+
+#footer {height:130px; clear:both; background:url(images/footer_bckg.jpg) no-repeat center #53533B; font-family:"Times New Roman", Times, serif; color:#666666; font-size:10px; text-transform:uppercase; padding:0 60px;}
+#left_footer {float:left; padding:30px 0 0 20px;}
+#right_footer {float:right; padding:30px 20px 0 0;}
+
+.postmetadata {font-size:11px;}
+.postmetadata small {font-size:11px;}
+.date {font-size:11px; margin-bottom:-8px;}
+#searchform {margin:0;}
+#searchform #searchsubmit {width:30px; height:21px; border:none; color:#FFFFFF; background-color:#936307; font-size:14px; font-weight:bold;}
+#searchform #s {width:140px;}
+#commentform #comment {width:500px;}
+#commentform #author, #commentform #email, #commentform #url {width:250px;}
+#commentform #submit {width:140px; height:21px; border:none; color:#FFFFFF; background-color:#936307; font-size:14px; font-weight:bold;}
+#commentform p {margin:5px 0 5px 0;}
+#calendar caption {margin:5px 0 5px 0; font-family:"Times New Roman"; font-size:22px; font-weight:bold; text-align:left;}
+#calendar h2 {margin:0; padding:0;}
+#wp-calendar th {padding:0 9px 0 0; text-align:left;}
+#wp-calendar td {padding:0 9px 0 0;}
+.commentlist {padding-right:10px;}
+.commentlist .alt {}
+#text .commentlist p {margin:0 0 12px 0;}
+.navigation {text-transform:uppercase; margin-top:20px; font-size:13px;}
+blockquote {font-style:italic; border-left:3px solid #936307; padding-left:10px; margin:10px 0 10px 20px;}
+code {line-height:normal;}

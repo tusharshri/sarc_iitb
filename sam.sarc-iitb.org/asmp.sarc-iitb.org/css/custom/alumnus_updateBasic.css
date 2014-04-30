@@ -1,0 +1,10 @@
+#fullname label, #fullname input, #fullname div.errorMessage{
+    display:inline-block;
+    width: 172px;
+}
+#fullname select{
+    display:inline;
+    width:100px;
+}
+
+

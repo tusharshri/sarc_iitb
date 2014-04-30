@@ -1,0 +1,127 @@
+#alumlist {
+	float: left;
+	margin: 20px 1%;
+	width: 68%;
+}
+
+	#alumlist th,td {
+		text-align: center;
+		padding: 5px;
+	}
+
+	#alumlist tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+		cursor: pointer;
+	}
+
+	#alumlist tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+		cursor: pointer;
+	}
+
+	#alumlist tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+	}
+
+	#alumlist tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+	}
+
+	#alumlist tr:nth-child(2n).selected {
+		color: #C5D256;
+		background: #040404;
+	}
+
+	#alumlist tr:nth-child(2n+1).selected {
+		color: #141414;
+		background: #D0EC11;
+	}
+
+	#alumlist tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}
+
+	#alumlist tr.head th:hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	#alumlist tr.head th.selected {
+		color: #141414;
+		background: #D0EC11 url('../images/arrow-up.png') no-repeat right;
+	}
+
+	#alumlist tr.head th.selected-down {
+		color: #141414;
+		background: #D0EC11 url('../images/arrow-down.png') no-repeat right;
+	}
+
+#volunteer {
+	overflow-y: scroll;
+	position: fixed;
+	right: 0px;
+	top: 30px;
+	width: 30%;
+	height: 96%;
+    margin-top:10px;
+}
+
+	#volunteerlist {
+		margin: 30px 0px;
+		height: 100px;
+		width: 100%;
+	}
+
+		#volunteerlist th,td {
+			text-align: center;
+		}
+
+		#volunteerlist tr:nth-child(2n) {
+			color: #D0EC11;
+			background: #505050;
+			cursor: pointer;
+		}
+
+		#volunteerlist tr:nth-child(2n+1) {
+			color: #040404;
+			background: #C5D256;
+			cursor: pointer;
+		}
+
+		#volunteerlist tr:nth-child(2n):hover {
+			color: #C5D256;
+			background: #040404;
+		}
+
+		#volunteerlist tr:nth-child(2n+1):hover {
+			color: #141414;
+			background: #D0EC11;
+		}
+
+		#volunteerlist tr:nth-child(2n).selected {
+			color: #C5D256;
+			background: #040404;
+		}
+
+		#volunteerlist tr:nth-child(2n+1).selected {
+			color: #141414;
+			background: #D0EC11;
+		}
+
+#allot {
+	position: fixed;
+	right: 5%;
+	top: 10px;
+}
+
+#search td {
+	padding-left: 100px;
+}
+

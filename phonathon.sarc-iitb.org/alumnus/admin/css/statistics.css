@@ -1,0 +1,79 @@
+#calldetails {
+	margin-top: 50px;
+	margin-left: 30px;
+	width: 42%;
+	float: left;
+}
+
+	#calldetails th,td {
+		text-align: center;
+		padding: 5px 20px;
+	}
+
+	#calldetails tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	#calldetails tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	#calldetails tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	#calldetails tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	#calldetails tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}
+
+#agendadetails {
+	margin-top: 50px;
+	margin-right: 30px;
+	width: 50%;
+	float: right;
+}
+
+	#agendadetails th,td {
+		text-align: center;
+		padding: 5px 20px;
+	}
+
+	#agendadetails tr:nth-child(2n) {
+		color: #D0EC11;
+		background: #505050;
+	}
+
+	#agendadetails tr:nth-child(2n+1) {
+		color: #040404;
+		background: #C5D256;
+	}
+
+	#agendadetails tr:nth-child(2n):hover {
+		color: #C5D256;
+		background: #040404;
+		cursor: pointer;
+	}
+
+	#agendadetails tr:nth-child(2n+1):hover {
+		color: #141414;
+		background: #D0EC11;
+		cursor: pointer;
+	}
+
+	#agendadetails tr.head:hover {
+		color: #040404;
+		background: #C5D256;
+		cursor: inherit;
+	}

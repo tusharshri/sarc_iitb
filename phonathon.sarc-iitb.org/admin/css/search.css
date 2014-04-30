@@ -1,0 +1,20 @@
+#search {
+	width: 1000px;
+	margin: auto;
+}
+
+#search td {
+}
+
+#search div {
+	margin: 15px 0;
+}
+
+#search input {
+	border: 1px solid #505050;
+	padding: 4px;
+}
+
+#search input.submit {
+	margin-left: 500px;
+}

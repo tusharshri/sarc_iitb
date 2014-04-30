@@ -1,0 +1,217 @@
+body{
+	padding: 0;
+	margin:0;
+	line-height: 25px;
+	/*background: #F7F2DD;background: #d1d6ce url(../images/body-bg.jpg) repeat center top;
+	background-image: url("../images/background_tile.jpg");
+	*/
+	background-image:url('../images/texture.jpg');
+	background-repeat: repeat repeat;
+	font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+.contentwrapper{
+	padding-top: 10px;
+	width: 700px;
+	float:left;
+
+	margin-left: 260px;
+}
+.sidebar{
+	float: left;
+	width: 260px;
+}
+.lavalamp-dark{
+	float: left;
+	margin-left: 380px;
+	margin-top: 61px;
+}
+.header{
+	width: 100%;
+	background-color: rgb(46, 49, 51);
+	box-shadow: rgba(0, 0, 0, 0.701961) 0px 0px 5px 0px;
+	color: #FFF;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font: normal normal normal 15px/1.1em Geneva, Tahoma, sans-serif;
+	border-bottom: 2px solid #0fa1e0;
+}
+#horznav>li{
+	width: 81px;
+}
+#header{
+
+}
+.logo{
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+#footmax{
+	border-bottom: 0px;
+}
+#header{
+	height: 100px;
+}
+#pagewrapper{
+	text-align: justify;
+	min-height: 695px;
+	border-right: 1.100000011920929px dashed rgb(174, 174, 174);
+border-left: 1.100000011920929px dashed rgb(174, 174, 174);
+padding-left: 5px;
+padding-right: 5px;
+}
+.clear{
+	clear:both;
+}
+/*********************************************************
+********************TEAM CSS******************************
+*********************************************************/
+
+#da-thumbs img{
+	height: 110px;
+	width: 130px;
+	  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -ms-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  transition:all .3s ease;
+}
+#da-thumbs h3{
+	margin-top: 18px;
+	margin-bottom: 2px;
+}
+#da-thumbs>li:hover .imageenlarge{
+	height: 150px;
+	width: 170px;	
+}
+#section>ul{
+	padding-top: 0px;
+}
+.trio{
+	position: relative;
+	left:70px;
+}
+.movable{
+	position: relative;
+	left: 60px;
+}
+/*********************************************************
+********************SLIDER CSS****************************
+*********************************************************/
+
+.slider{
+	width: 100%;
+}
+.vision{
+
+	padding-top: 0;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: 0 27px 30px -18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 27px 30px -18px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 27px 30px -18px rgba(0, 0, 0, 0.5);
+}
+.heading{
+	text-align: center;
+	display: block;
+
+	font-size: 16px;
+	
+	
+	
+	padding: 5px;
+
+	background-color: rgba(53, 142, 251, 0.8);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(111, 199, 236)), color-stop(100% rgba(53, 142, 251, 0.8)));
+	background-image: -webkit-linear-gradient(top, rgb(111, 199, 236) 0%, rgba(53, 142, 251, 0.8) 100%);
+	background-image: -moz-linear-gradient(top, rgb(111, 199, 236) 0%, rgba(53, 142, 251, 0.8) 100%);
+	background-image: -ms-linear-gradient(top, rgb(111, 199, 236) 0%, rgba(53, 142, 251, 0.8) 100%);
+	background-image: -o-linear-gradient(top, rgb(111, 199, 236) 0%, rgba(53, 142, 251, 0.8) 100%);
+	background-image: linear-gradient(top, rgb(111, 199, 236) 0%, rgba(53, 142, 251, 0.8) 100%);
+	color: #FFF;
+}
+.noShadow{
+	-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	border: 1px solid transparent;
+	border-bottom: 1px solid rgba(53, 142, 251, 0.8);;
+}
+
+/*********************************************************
+********************FOOTER CSS****************************
+*********************************************************/
+#footer{
+	text-align: center;
+}
+.footercontent{
+	width: 260px;
+	float: left;
+	padding: 0 30px;
+	font-size: 13px;
+	color: rgb(195,195,195);
+}
+.footercontent>a{
+	color: rgb(195,195,195);
+	text-decoration: none;
+	display: block;
+	padding: 2px 0;
+}
+.footercontent a>img{
+	width: 25px;
+	height: 25px;
+}
+#second a{
+	float: left;
+	padding: 5px;
+}
+
+.endtag{
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: rgb(119, 126, 131);
+}
+.footerheading{
+	color: rgb(119, 126, 131);
+	display: block;	
+	padding: 5px 0;
+	font-size: 15px;
+}
+hr{
+	background: rgb(119, 126, 131);
+	height: 1px;
+	border: 0px solid transparent;
+}
+#adpacks-wrapper{
+	display: none;
+}
+
+/******************************************
+***************SAM CSS*********************
+******************************************/
+#about	{
+		    color: #999;
+		    text-align: center;
+		    font: 0.9em Arial, Helvetica;
+		}
+
+#about a{
+		    color: #777;
+		}	
+
+/******************************************
+***************FBL CSS*********************
+******************************************/
+.fblike{
+	position: absolute;
+	margin-top: 250px;
+	height: 500px;
+}

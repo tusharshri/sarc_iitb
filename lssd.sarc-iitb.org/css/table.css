@@ -1,0 +1,118 @@
+#alumnus_all tr:nth-child(odd) , #student_all tr:nth-child(odd),#volunteer_all tr:nth-child(odd) {background: #E5F1F4}
+#alumnus_all tr:nth-child(even), #student_all tr:nth-child(even), #volunteer_all tr:nth-child(even) {background: #F8F8F8}
+#alumnus_all tr:hover, #student_all tr:hover, #volunteer_all tr:hover {background: #ECFBD4; cursor:pointer;}
+
+#accordion_detail tr{
+	border-collapse:separate; 
+	border-spacing:5em;	
+}
+
+#accordion_detail tr:nth-child(odd) {
+	background: #E5F1F4;
+}
+
+
+/*#accordion_detail th{
+	background: #E5F1F4;
+}
+
+#accordion_detail td{
+	background: #F8F8F8;
+}*/
+
+fieldset.border_visible{
+	border:1px solid black;	
+}
+
+legend.bold_green {
+	font-size:16px;
+	color:green;
+	font-weight:bold;
+}
+
+label.size250{
+	width:250px;
+	display:inline-block;
+	padding:5px;	
+}
+
+ul.no_style_ul li{
+	list-style-type:none;
+}	
+
+div.sub_nav{
+	height:80px;
+}
+
+div.sub_nav li{
+	display:inline-block;	
+	padding:3px;
+	float:right;
+}
+
+div.sub_nav li span{
+	font-weight:bold;	
+}
+
+div.sub_nav a{
+	text-decoration:none;	
+}
+
+.other_company{
+	display:none;	
+}
+
+.add_button,.submit_button{
+	display:inline-block;
+	width:120px;
+	cursor:pointer;
+	background:#1d931d;
+	border-radius:5px;
+	padding:10px 10px;	
+	font-weight:bold;
+	color:white;
+	text-align:center;
+}
+
+.hide{
+	display:none;	
+}
+
+.show{
+	display:block;	
+}
+
+.left_nav{
+	position:fixed;	
+	padding-top:15px ;
+	padding-bottom:15px ;
+	list-style-type:none;
+	background:#5ea2ca;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	margin-left:-20px;
+	padding-right:10px;
+}
+
+.left_nav li{
+	display:block;
+	padding:10px 40px;
+	cursor:pointer;
+	margin-left:-45px;
+		
+}
+
+.left_nav li a{
+	text-decoration:none;	
+	color:white;
+}
+
+.left_nav li:hover{
+	background:white;
+	
+}
+
+.left_nav li:hover a{
+	color:#5ea2ca;
+	display:block;
+}

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/sarc_iitb/logs/phonathon.sarc-iitb.org/http.16551994/html/.htpasswd
+AuthName "Statistics Area"
+require valid-user

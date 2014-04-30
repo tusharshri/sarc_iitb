@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SARC</title>
+<meta name="description" content="SARC (Student Alumni Relation Cell)">
+<meta name="keywords" content="SARC, ASMP, iitbombay.org, IITBAA">
+<meta name="author" content="Templates.com - website templates provider">
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+
+</script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript">
+
+function emailcheck(){
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var str=$('#email').val();
+		if(reg.test(str)==false){
+			$('#emailerror').html("Invalid E-mail")
+			$('#emailerror').css("display", "inline");	
+			return false;
+		}
+		if(reg.test(str)==true){
+			$('#emailerror').css("display", "none");	
+			return true;
+		}
+		
+	}
+
+
+$(function(){
+	$('#map').click(function(){
+		$('#gmap').slideToggle(400);
+		
+	});
+	$('#social li img').hover(function(){
+		$(this).animate({
+		width:'40'
+		}, 300);
+			
+		
+		
+	}, function(){
+			$(this).animate({width:25}, 200);
+		});
+		
+	$('#maintab ul').hide();
+	$('#menu li').hover(function(){
+		$(this).find('ul:first').slideDown(200);
+		
+		//alert('saurav');
+	},function(){ 
+		$(this).find('ul:first').hide();
+	
+		
+	});
+	
+	
+			
+	$('#submitbutton').click(function(){
+	if($('#nam').val()==""){
+		$('#namerror').css("display", "inline");
+		return 0;
+	}
+	if($('#email').val()==""){
+		$('#emailerror').html("Please Provide E-mail");
+		$('#emailerror').css("display", "inline");
+		return 0;	
+	}
+	if(emailcheck()==false){
+		return 0;
+	}
+	var message=$('#message').val();
+	if(message.length<10){
+		$('#mssgerror').css("display", "inline");
+		return 0;
+	}
+	$('#formdisplay').slideUp(400);
+	$('#formhide').slideDown(700);
+	//document.forms['contactus'].submit();
+	
+	
+});
+	$('#who').change(function(){
+		if($(this).val()=="student"){
+			$('#alumnitr').css("display", "none");
+			$('#studenttr').slideDown(200);
+		}
+		if($(this).val()=="alumni"){
+			$('#alumnitr').slideDown(200);
+			$('#studenttr').css("display", "none");
+		}
+		if($(this).val()=="other"){
+			$('#alumnitr').css("display", "none");;
+			$('#studenttr').css("display", "none");
+		}
+		
+	});
+
+});
+
+
+</script>	
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="header">
+    	<div class="container">
+        	<div id="social">
+            <ul>
+            	<li><img src="images/blue/facebook_blue.png"></li>
+                <li><img src="images/blue/twitter_blue.png"></li>
+                <li><img src="images/blue/linkedin_blue.png"></li>
+                <li><img src="images/blue/digg_blue.png"></li>
+                <li><img src="images/blue/rss_blue.png"></li>
+                </ul>
+            </div>
+        <img id="logo" src="images/deco_logo.png">
+        <div id="menu">
+        	<ul id="maintab">
+            	<li>Contact Us</li>
+                <li>Blog</li>
+               
+                <li>Initiatives
+                	<ul style="margin-left:0px;">
+                    	<li>ASMP</li>
+                        <li>Lost Soul Search Drive
+                        </ul>
+                </li>
+                <li>Events
+                <ul style="margin-left:0px;">
+                    	<li>Phonathon</li>
+                        <li>Student Alumni Meet</li>
+                        </ul>
+                </li>
+                <li>About Us</li>
+                <li>Home</li>
+            </ul>
+        </div>
+        </div>
+
+
+	</div>
+    <div class="container">
+    	<div id="left">
+        	<div class="first">
+        		<h3>Contact Us</h3>
+                <ul>
+                	<li>About the SARC</li>
+                    <li>How to find Us</li>
+                    <li>View location Map</li>
+                    <li>Suggestion/Feedback</li>
+                 </ul>
+       		</div>
+            <div class="first">
+        		<h3>Latest News: </h3>
+                <ul>
+                	<li>About the SARC</li>
+                    <li>How to find Us</li>
+                    <li>View location Map</li>
+                    <li>Suggestion/Feedback</li>
+                 </ul>
+       		</div>
+            <div class="first">
+        		<h3>See also</h3>
+                <ul>
+                	<li>Phonathon</li>
+                    <li>Student Alumni Meet</li>
+                    <li>Our Team</li>
+                    <li>About Us</li>
+                 </ul>
+       		</div>
+            
+        </div>
+        <div id="center">
+			<div class="first">
+            	<div id="content1">
+            		<h2>About SARC</h2>
+            	The role of the Alumni Office is to establish and enhance a continuing relationship between the University of Oxford and its alumni. There are more than 180,000 Oxford alumni, of whom about one-third are based overseas and this number is growing as the University accepts more international students and undergraduate and graduate level. We aim to provide all Oxonians, regardless of their college or subject affiliations, with an alumni experience commensurate with their world-class education and offer a varied programme of benefits, events and communications to help keep you in touch and involved with your University.
+<br>
+The Alumni Office is part of the portfolio of the Pro-Vice-Chancellor for Development and External Affairs (Professor Nick Rawlins).
+				</div>
+                </div>
+                <div id="find">
+                <h3>How To Find Us</h3>
+                IITBAA, Second Floor, Gulmohar building, Main Gate Road, Indian Institute Of Technology (IIT), Bombay, Powai, Mumabai - 76<br>Maharashtra<br><div id="contact">
+                <b>Tel. No. :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 022-123456<br>
+                <b>E-mail :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sarc@iitb.org
+                </div>
+                <br>
+                <a id="map">View Location Map</a>
+             
+                <div id="gmap">
+                <iframe width="540" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Gulmohar+Building,+IIT+Bombay,+Powai,+Mumbai,+Maharashtra&amp;aq=&amp;sll=19.130654,72.917633&amp;sspn=0.040383,0.084543&amp;ie=UTF8&amp;hq=Gulmohar+Building,&amp;hnear=Dept+of+Earth+Sciences,+IIT+Bombay,+YP+Rd,+Powai,+Mumbai,+Mumbai+suburban,+Maharashtra+400076&amp;ll=19.144844,72.926044&amp;spn=0.064867,0.092525&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Gulmohar+Building,+IIT+Bombay,+Powai,+Mumbai,+Maharashtra&amp;aq=&amp;sll=19.130654,72.917633&amp;sspn=0.040383,0.084543&amp;ie=UTF8&amp;hq=Gulmohar+Building,&amp;hnear=Dept+of+Earth+Sciences,+IIT+Bombay,+YP+Rd,+Powai,+Mumbai,+Mumbai+suburban,+Maharashtra+400076&amp;ll=19.144844,72.926044&amp;spn=0.064867,0.092525&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+                
+                </div>
+                
+                </div>
+                <div id="contactform">
+                <h2>Feedback Form</h2>
+                <div id="formdisplay">
+                What is your say on us is important for us. We look forward to your suggestions and feedbacks.
+                <form name="contactus" action="#" method="get">
+                <table>
+                	<tr>
+                    	<td width="120px" height="30px">Name:</td>
+                        <td><input type="text" name="nam" id="nam"><span id="namerror">Please provide name.</span></td>
+                    </tr>
+                    <tr>
+                    	<td>E-mail:</td>
+                        <td><input type="email" id="email"  onBlur="emailcheck()" name="email"><span id="emailerror">Invalid E-mail</span></td>
+                    </tr>  
+                    <tr id="type">
+                    	<td>Who are you?:</td>
+                        <td><select name="who" id="who">
+                        	<option value="">Please Select One</option>
+                        	<option value="student">An IIT Bombay student</option>
+                            <option value="alumni"> An IIT Bombay Alumni</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span id="emailerror">Invalid E-mail</span></td>
+                    </tr>
+                    <tr id="studenttr">
+                    <td>Which Year</td>
+                    <td><select id="year" name="year">
+                    	<option value="first">First Year</option>
+                        <option value="second">Second Year</option>
+                        <option value="third">Third Year</option>
+                        <option value="fourth">Fourth Year</option>
+                        <option value="fifth">Fifth Year</option>
+                   		</select>    
+                    
+                    </td>
+                    </tr>
+                    <tr id="alumnitr">
+                    <td>Your Graduation Year</td>
+                    <td><input type="text"></td>
+                    </tr>
+                      
+                    <tr>
+                    	<td valign="top">Your Message:</td>
+                        <td><textarea name="message" id="message"></textarea><span id="mssgerror" style="vertical-align:top; float:left">Your message must be of atleast 10 characters.</span></td>
+                	</tr>
+                    <tr>
+                    	<td><div id="submitbutton">Submit</div></td>
+                        </tr>
+                   </table> 
+                   </form>
+                   </div>
+                   <div id="formhide" style="display:none">
+            Thank You for your valuable suggestion.
+            	Your message has been submitted. We will get back to you soon.  
+            </div>
+                </div>
+            
+        </div>
+        <div id="right">
+        	<div class="first">
+        		<h3>Upcoming Events: </h3>
+                <ul>
+                	<li>About the SARC</li>
+                    <li>How to find Us</li>
+                    <li>View location Map</li>
+                    <li>Suggestion/Feedback</li>
+                 </ul>
+       		</div>
+            <div class="first">
+        		<h3>Words From Alumnus: </h3>
+               Statements from sum of our alumni can be pt here....
+       		</div>
+            <div class="first">
+            <span style="font-size:10px;">
+            Subscribe for our monthly newslettes<br>
+            <input type="text" value="Type your e-mail here."><input type="submit"  style="width:30px; font-style:normal; background-color:#055; border:none; color:#fff; margin-left:5px; height:18px;" value="Go">
+            </div>
+            
+        </div>
+    </div>
+    <div id="footer">
+    	<div class="container" id="foot">
+        <img src="images/deco_logo.png" width="150">
+        <div id="secondcol">
+        	<h3>Quick Links</h3>
+        	<a href="">Home</a><br>
+            <a href="">About Us</a><br>
+            <a href="">Out Team</a><br>
+            <a href="">Initiatives</a><br>
+            <a href="">Events</a><br>
+            <a href="">Contact Us</a>
+        </div>
+        <div id="secondcol">
+        <h3>Extenal links</h3>
+        	<a href="">iitbombay.org</a><br>
+            <a href="">iit2011.org</a><br>
+             <a href="">iitb.ac.in</a><br>
+            <a href="">cafepress.com/iitbombay</a><br>
+            <a href="">bombay76.com</a><br>
+        </div>
+        <div id="secondcol">
+        	<h3>Social Media</h3>
+        	<a href="">Facebook</a><br>
+            <a href="">Linked In</a><br>
+            <a href="">Twitter</a><br>
+            <a href="">Picassa Albums</a><br>
+            <a href="">Yahoo Groups</a><br>
+            <a href="">Google</a>
+        </div>
+        </div>
+    
+    </div>
+ 
+</body>
+</html>

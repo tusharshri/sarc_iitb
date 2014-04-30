@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>SAM</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- bjqs.css contains the *essential* css needed for the slider to work -->
+    <link rel="stylesheet" href="bjqs.css">
+
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+    <link rel="stylesheet" href="demo.css">
+
+	
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<style type="text/css">
+		@import "domtab2.css";
+	</style>
+	
+			<meta name="description" content="Blueprint: Nested Accordion" />
+		<meta name="keywords" content="nested, accordion, simple, vertical, web development, css3, javascript" />
+		<meta name="author" content="Codrops" />
+    <style media="screen" type="text/css">
+        #example2 {
+            margin:0;
+            width:740px;
+            background-color:#fff6d8;
+            color:#000000;
+            line-height:120%;
+            height:500px;
+        }
+
+        #example2 a {
+            display:block;
+            font-weight:normal;
+            text-decoration:none;
+        }
+
+        #example2 ul {
+            overflow: hidden;
+            margin:0;
+            padding:0;
+        }
+
+        #example2 li {
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+
+        #example2 li a {
+            width:740px;
+            padding:10px 0 0 15px;
+            display:block;
+            color:#ffffff;
+			font-size:15px;
+            background:rgb(10, 44, 71);
+            height: 35px;
+        }
+
+
+
+        #example2 li li {
+            border-left:1px solid #E5E5E5;
+            border-right:1px solid #E5E5E5;
+            padding:0 15px 0 15px;
+            height:300px;
+        }
+
+        #example2 li a.opened {
+            background:rgb(86, 179, 247);
+            color:#FFFFFF;
+        }
+
+    </style>
+    <script type="text/javascript" src="js/js1.js">
+    </script>
+    <script type="text/javascript" src="js/js2.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+            // Setup HoverAccordion for Example 1
+            $('#example1').hoverAccordion({onClickOnly:true,keepHeight:true});
+
+            // Setup HoverAccordion for Example 2 with some custom options
+            $('#example2').hoverAccordion({
+                keepHeight:true,
+                activateItem: 3,
+                speed: 400
+            });
+            $('#example2').children('li:first').addClass('firstitem');
+            $('#example2').children('li:last').addClass('lastitem');
+        });
+    </script>
+</head>
+<body>
+<!-- ################################## <header> ################################-->
+<div id="main_header">
+<div id="header">
+  <ul>
+    <li><a href="https://www.facebook.com/SARC.2012" class="home" title="facebook">facebook</a></li>
+    <li><a href="https://twitter.com/sarc_iitb" class="user" title="twitter">twitter</a></li>
+    <li><a href="https://www.youtube.com/user/SARCIIT" class="contact" title="youtube">youtube</a></li>
+  </ul>
+
+  <ul class="navi">
+    <li><a href="index.html">Home</a></li>
+	<li><a href="events.html">Events</a></li>
+    <li><a href="profiles.html">Profiles</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+    <li class="li1"><a href="ourteam.html">Our Team</a></li>
+  </ul>
+</div>
+</div>
+<!-- ################################## </header> ################################-->
+
+<div id="main_body">
+<div id="other" class="domtab doprevnext" style="width:800px; margin:0 auto;">
+<br>
+	<div style="width: 764px;
+margin: 0px auto;
+display: block;
+margin-left: 20em;
+margin-bottom: 5em;
+background-color:#fff6d8;">
+		<h2><center><a style="font-size: 18px;"><b>Core Weekend</b></a></center></h2>
+				<p align="right"><a href="events.html">back to event's menu</a></p>
+ <div style="width:700px;height:500px;background-color:#fff6d8;padding:10px;margin-bottom: 400px;">
+            <a name="ex2" id="ex2"></a>
+            <ul id="example2">
+                <li>
+                    <center><a href="#"><b>CIVIL ENGINEERING</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+                            <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/rajesh.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Mr.Rajesh Gajjar (Department of Civil Engineering):
+Date: 5th October 2013
+Time: 11am
+Venue: VMCC Hall 31
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Mr. Rajesh Gajjar has 21 years of experience in core civil engineering and currently running his own consultancy firm GMD Engineering Consultants Pvt. Ltd.He has been General Manager at Eigen Technical Service Private Ltd(A part of Laing 'O' Rourke UK)2005,January 2011 (6 year).He is expert in Highways ,Bridges,Traffic and Transportation,Wet Infrastructure,Feasibility Studies,Construction Management and Allied Services</span></p>
+<br>
+<br>
+<br>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Mr. Sunil S. Basarkar (Department of Civil Engineering):
+Date: 6th October 2013
+Time: 1:00 pm
+Venue: Vmcc 3rd Floor(Hall 22)
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">He is presently working as General Manager (Technical Services & Quality) at ITD Cementation India limited.He has done his PhD in Pile foundations from IIT Bombay in 2004 and has field experience of 10 years and Teaching and Research experience of 16 years.He has 42 papers published in Journals and Conference proceedings till date.He is a Life Member of Indian Geotechnical Society and member of  Deep Foundation Institute (USA) and Member, Indian Society of Technical Education.</span></p>
+                        </li>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                    </ul>
+                </li>
+                <li>
+                    <center><a href="#"><b>ENERGY SCIENCE</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+                          <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/gaurd.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Shirish S Garud
+Date: 5th October 2013
+Time: 11:30 am
+Venue: VMCC Hall 21
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Graduate from IIT Bombay,Energy system and Engineering Mtech 1984-1986 batch
+Presently working as Senior fellow in TERI (The Energy and resources institute) steering the renewable energy technology group.A non-profit organization founded in 1974 creating innovative solutions for sustainable future
+Worked as Vice president for Green Energy Renewables pvt Ltd which aims at setting up solar and wind power plants across India and also South Africa, Morocco, Indonesia,Poland.
+Also worked as General Manager for over a decade in Renewables Energy  Pvt ltd. where he commercialised solar selective coating technology, developed solar selective coating plant for Solar water heater.</span></p>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <center><a href="#"><b>COMPUTER SCIENCE</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+						<br>
+                            <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/hari.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Sree Hari Nagaralu: 
+Date: 6th October 2013
+Time: 11:00 am
+Venue: VMCC 2nd Floor(Hall 23)
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Presently working as a principal development manager at Bing, Microsoft in hyderabad. He has been responsible for delivering numerous search quality  improvements in bing for the past 6 years and had 4 patents filed. He has also worked as an architect and lead developer at Reconnex from september 2006 to march 2008. Before that he was principal software engineer at Symantec Corporation for 6 years.</span></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <center><a href="#"><b>MECHANICAL ENGINEERING</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+						<br>
+                            <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/harshwardan.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Harshwardhan Gupta: 
+Date: 5th October 2013
+Time: 11:30 am
+Venue: VMCC Hall 22
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">IIT Bombay graduate, B.tech in mechanical engineering(1970 Batch)
+He is currently the Director of Neubauplan Machine Design Auto. He has been working with this company for past 32 years.
+He is also the managing director of Neubauplan Automation Machines Private Limited. He worked as a design executive at electronica Machine Tools Limited from August 1978 to June 1981. Before that he worked as a design engineer at Godrej for 2 years.
+
+Honor and Awards:
+Special Jury's amention
+Manus Competition, Germany (April, 2013): For a ground-breaking use of engineering plastic sliding bearing in a very high-impact application.</span></p>
+                        </li>
+                    </ul>
+                </li>
+				    <li>
+                    <center><a href="#"><b>METALLURGICAL ENGINEERING AND MATERIAL SCIENCE</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+						<br>
+                            <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/vivek.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Vivek Pavaskar: 
+Date: 5th October 2013 
+Time: 3:00 pm to 3:45 pm
+Venue: VMCC Hall 31
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Graduate from IIT Bombay,Bachelor of Technology (B.Tech.), Metallurgical Engineering 1972-1977 Presently the Owner of TECHNIK founded in 1992. Organizational work includes Advice, Education & Training in Welding Technology Worked as Technical Manager in Advani Oerlikon Ltd. Mumbai India where he  was responsible for Marketing & Technical Support for Continuous Welding Processes, Systems and Consumables Worked as  Working Engineer in Larsen & Toubro Ltd. Mumbai </span></p>
+                        </li>
+                    </ul>
+                </li>
+				    <li>
+                    <center><a href="#"><b>INDUSTRIAL DESIGN CENTER(IDC)</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+						<br>
+                          <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/gokul.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Gokul Krishnan: 
+Date: 6th October 2013 
+Time: 3:00 pm
+Venue: VMCC 3rd Floor(Hall 32)
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Owner of Peacock Design is a Master of Design from Industrial Design Centre (IDC) IIT Bombay 1988-90 Batch. Peacock Design Lab creates innovative products using latest CAD and rapid manufacturing technologies.Gokul has over 23 years of experience in the field of industrial design. He has worked for A Little World, Intergold India Pvt Ltd, Crompton Greaves and Godrej & Boyce Mfg. Ltd. over this time. </span></p>
+
+                        </li>
+                    </ul>
+                </li>
+								    <li>
+                    <center><a href="#"><b>CHEMICAL ENGINEERING</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+                          <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/hemant.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Hemant Patel: 
+Date: 6th October 2013 
+Time: 3:00 pm
+Venue: VMCC 2nd Floor(Hall 23)
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">After receiving B.Tech. in 1979 and M.S, in 1981 (Chemical engineering) Hemant joined DuPont.  His 30 years of career with DuPont spanned three continents - America, Europe and Asia.  He worked in different areas such as Operations, Process Control Modelling, Simulation, IT and Project   engineering. For the last 10 years, Hemant has been working in Six Sigma, Lean and supply chain.
+
+Hemant retired early from DuPont to devote his time for an NGO in India. He lives and works at this NGO - Muni Seva Ashram - which is located in a small village near Vadodara.  At this NGO, he is leading an effort to build a 1.3 MW industrial size plant that will derive biogas from agricultural, industrial and animal residue and make the NGO 100% independent from geo energy.</span></p>
+
+                        </li>
+                    </ul>
+                </li>
+								    <li>
+                    <center><a href="#"><b>AEROSPACE ENGINEERING</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+                          <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/vaibhav.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Vaibhav Vasistha: 
+Date: 5th October 2013 
+Time: 3:00 pm
+Venue: VMCC Hall 21
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;"> Graduated from Aerospace Department,  IIT Bombay in 2009.
+Vaibhav Vasistha is working as an Application Engineer in ANSYS.  His main domain is Computational Fluid Dynamics
+and is an expert in turbomachinery. </span></p>
+
+                        </li>
+                    </ul>
+                </li>
+								    <li>
+                    <center><a href="#"><b>ELECTRICAL ENGINEERING</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+                          <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/nirmal.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Dr. Nirmal Jain: 
+Date: 6th October 2013 
+Time: 11:00 am
+Venue: VMCC 3rd Floor(Hall 31)
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Dr. Jain earned his Bachelor's Degree in Electrical Engineering from IIT Bombay, a Master's Degree in Electrical Engineering from IIT Delhi.
+He started with Harris Communications in Dallas, TX, designing the Operating System for the Communication Processor. He has spent 25 years with Tata Group Companies - Tata Consultancy Services (TCS) and Tata Infotech Ltd. (Now merged with TCS).
+He has also worked as an Advisor with Patni Computers to assist the company in improving their 'Operation Efficiency' and in improving their infrastructure. Earlier Dr. Jain was the CEO of ISG Novasoft, based in India and the U.S. For the last 10 years, Dr Jain had been working as CEO & Advisor to different Information Technology Services companies. </span></p>
+
+                        </li>
+                    </ul>
+                </li>
+				  <li>
+                    <center><a href="#"><b>CHEMISTRY ENGINEERING</b></a></center>
+                    <ul>
+                        <li>
+						<br>
+						<br>
+                          <p style="line-height: 1.5; margin-top: 0pt; margin-bottom: 0pt;"><img src="images/speakers/swpana.jpg" width="150" height="150" align="right" alt="" /></p>
+<h3><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Swapan Kumar Ghosh: 
+Date: 6th October 2013 
+Time: 11:00 am
+Venue: VMCC 
+</span></h3>
+<p><span style="font-size: 15px; line-height: 1.5em; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Swapan Kumar Ghosh earned his BSc and MSc degrees from the University of Burdwan, after which he taught in Balurghat College and then joined Bhabha Atomic Research Centre (BARC), Bombay, first as a Trainee and then as Scientific Officer. He did his PhD (1982) from Indian Institute of Technology (IIT), Bombay under the supervision of BM Deb. He worked with Robert G Parr at the University of North Carolina, Chapel Hill (1984-85). Ghosh presently heads the Theoretical Chemistry Section at BARC, Mumbai. He is also senior Professor and Dean-Academic (BARC), Chemical Sciences at the Homi Bhabha National Institute, Mumbai, and an adjunct Professor at the University of Mumbai-DAE Centre of Excellence for Basic Sciences, Mumbai.</span></p>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+</div>	
+	<br>
+	<br>
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+<!-- ######################################## <footer> ##########################################-->
+<div id="main_footer">
+<div id="footer"><!--footer navigation start -->
+<ul>
+<li>|&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="mg">Home</a>|</li>
+<li><a href="profiles.html">Profiles</a>|</li>
+<li><a href="events.html">Events</a>|</li>
+<li><a href="schedule.html">Schedule</a>|</li>
+<li><a href="ourteam.html">Our Team</a>|</li>
+</ul>
+<ul class="ad">
+<li><a>You can get more info about SAM and SARC </a></li>
+<li class="nobor1"><a><span>Websites</span>
+http://www.sarc-iitb.org/</a></li>
+<li class="nobor"><a><span>Phone:</span>
++91 88288 32957 <br>+91 9167467405</a></li>
+</ul>
+<p>&copy; Student Alumni Relation Cell,All rights reserved.<br>Designed by: Web & Design Team</p>
+</div><!--footer navigation end -->
+</div>
+<!-- ######################################## </footer> ##########################################-->
+
+</body>
+</html>
