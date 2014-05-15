@@ -74,7 +74,6 @@ padding-right: 5px;
 
 #da-thumbs img{
 	height: 110px;
-	width: 130px;
 	  -webkit-transition:all .3s ease;
   -moz-transition:all .3s ease;
   -ms-transition:all .3s ease;
@@ -87,7 +86,6 @@ padding-right: 5px;
 }
 #da-thumbs>li:hover .imageenlarge{
 	height: 150px;
-	width: 170px;	
 }
 #section>ul{
 	padding-top: 0px;
