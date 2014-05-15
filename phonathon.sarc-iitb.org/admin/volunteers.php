@@ -108,9 +108,16 @@ if($active_volunteer>0){ echo 'Disable All Volunteers';} else { echo 'All Volunt
                     <th>Enabler</th>
 				</tr>
 <?php
+	$k = 0;
 	foreach ($volunteerlist as $i=>$volunteer) {
-		if ($volunteer['middlename'] != "") $volunteer['middlename'] .= " ";
-		$volunteer1 = $volunteerlist1[$i];
+//		if ($volunteer['middlename'] != "") $volunteer['middlename'] .= " ";
+		if($volunteerlist[$i]['count']==0){
+			$volunteer1 = $volunteerlist[$i];
+		}
+		else{
+			$volunteer1 = $volunteerlist1[$k];
+			$k++;
+		}
 ?>
 				<tr>
 					<td onClick="goto('volunteer.php?volunteer_id=<?php echo $volunteer['volunteer_id'] ?>')"><?php echo $volunteer['volunteer_id'] ?></td>

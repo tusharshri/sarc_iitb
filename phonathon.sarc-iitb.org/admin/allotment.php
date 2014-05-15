@@ -14,7 +14,7 @@
 	$column = $_GET['column'];
 	
 	$order = $_GET['order'];
-	if ($order != "") $order = " DESC";
+	if ($order != "") $order = "DESC";
 	
 	$selected = $_GET['selected'];
 	$selected = explode (",", $selected);
@@ -229,19 +229,26 @@
 	<td></td>
 	<td><b>Name</b></td>
 	<td><b>Alloted</b></td>
+	<td><b>Remaining</b></td>
 	<td><b>Special request</b></td>	
 	</tr>
 <?php
-	
-	foreach ($volunteerlist as $i => $volunteer) {
-		if ($volunteer['middlename'] != "") $volunteer['middlename'] .= " ";
-		$volunteer1 = $volunteerlist1[$i];
+	$k = 0;
+	foreach ($volunteerlist as $i=>$volunteer) {
+//		if ($volunteer['middlename'] != "") $volunteer['middlename'] .= " ";
+		if($volunteerlist[$i]['count']==0){
+			$volunteer1 = $volunteerlist[$i];
+		}
+		else{
+			$volunteer1 = $volunteerlist1[$k];
+			$k++;
+		}
 ?>
 					<tr onClick="selectVol(this)">
 						<td><input type="radio" name="volunteer" value="<?php echo $volunteer['volunteer_id'] ?>" /></td>
 						<td><?php echo $volunteer['name'] ?></td>
 						<td><?php echo $volunteer['count'] ?></td>
-						<!--<td><?php //echo $volunteer1['count'] ?></td>-->
+						<td><?php echo $volunteer1['count'] ?></td>
 						<td><?php echo $volunteer['specialrequest'] ?></td>
 					</tr>
 <?php
