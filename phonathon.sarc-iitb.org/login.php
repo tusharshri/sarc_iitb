@@ -88,6 +88,12 @@
 					<input name="simcardNo" type="text" size="20px" id="simcardnoEntry"/>
 				</td>
 			</tr>
+			<tr>
+				<td>Balance</td>
+				<td>
+					<input name="balance" type="text" size="20px" id="balanceEntry"/>
+				</td>
+			</tr>
 			<tr align="center"> 
 				<td colspan="2"> 
 					<input name="login" type="submit" value="Submit" />
