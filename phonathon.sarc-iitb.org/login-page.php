@@ -1,5 +1,10 @@
 <?php
 include "header.php";
+session_start();
+if(isset($_SESSION['role'])){
+	unset($_SESSION['role']);
+}
+$_SESSION['role']="volunteer";
 ?>
 		<div id="content">
 			<div class="post" style="padding-top: 57px;">

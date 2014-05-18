@@ -49,7 +49,7 @@
 					input[i].className = "";
 				}
 				for (i = 0; i < input.length; i++){
-					if (input[i].value == ""){
+					if (input[i].value == "" || input[i].trim.value="0"){
 						input[i].className = "invalid";
 						alert("Incomplete Form");
 						return false;
@@ -82,6 +82,9 @@
 					<input name="password" type="password" size="20px" id="passwordEntry"/>
 				</td>
 			</tr>
+			<?php 
+				if($_SESSION['role']=="volunteer"):
+			?>
             <tr>
 				<td>Sim card No</td>
 				<td>
@@ -94,6 +97,8 @@
 					<input name="balance" type="text" size="20px" id="balanceEntry"/>
 				</td>
 			</tr>
+			<?php 
+			endif; ?>
 			<tr align="center"> 
 				<td colspan="2"> 
 					<input name="login" type="submit" value="Submit" />
