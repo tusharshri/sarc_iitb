@@ -15,6 +15,6 @@
 	$index=0;
 	$let1=explode('|',$to_insert);
 	
-		$arr2=$DBConn->run_query ("UPDATE simcard SET  status=? WHERE simcardNo=?",array($let1[0],$let1[1]));
+		$arr2=$DBConn->run_query ("UPDATE simcard SET  status=?,balance=? WHERE simcardNo=?",array($let1[0],$let1[2],$let1[1]));
 	
 ?>
