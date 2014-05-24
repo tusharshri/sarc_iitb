@@ -1,23 +1,19 @@
 var volunteer = null;
 
-	function deactive(c){
+	function deactive(c,simcardno){
 		var sendto;
-		alert(c);
-		var a = document.getElementsByName("simcardno")[c].innerHTML;
-		var b = parseInt(document.getElementsByName("status")[c].innerHTML);
-		alert(b);
+		var a = document.getElementById("simcardno_"+simcardno).innerHTML;
+		var b = parseInt(document.getElementById("status_"+simcardno).innerHTML);
 		if(b==0){
-			document.getElementsByName("status_1")[c].val("Deactivate");
 			sendto=1;
 		}else{
-			document.getElementsByName("status_1")[c].val("Activate");
 			sendto=0;
 		}
-		var initial_bal = document.getElementsByName("initial_bal")[c].innerHTML;
-		var balance = document.getElementsByName("balance")[c].value.trim();
-		document.getElementsByName("balance")[c].value= "";
-		alert(initial_bal+","+balance);
-		if((parseInt(initial_bal)>=parseInt(balance)&&sendto==0)||(parseInt(initial_bal)<=parseInt(balance)&&sendto==1)){ 
+		var initial_bal = document.getElementById("initial_bal_"+simcardno).innerHTML;
+		var balance = document.getElementById("balance_"+simcardno).value.trim();
+		document.getElementById("balance_"+simcardno).value= "";
+//		alert(initial_bal+","+balance);
+		if((parseInt(initial_bal)>=parseInt(balance)&&sendto==0)||sendto==1&&parseInt(balance)>0&&balance!=""){ 
 			var updated=sendto+'|'+a+'|'+balance;
 //			alert(updated);
 			if (window.XMLHttpRequest) {	// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -34,8 +30,13 @@ var volunteer = null;
     		if(aa.readyState == 4 && aa.status == 200) {
         		if(aa.responseText!=""){
 //					alert(aa.responseText);
-					document.getElementsByName("initial_bal")[c].innerHTML=balance;
-					document.getElementsByName("status")[c].innerHTML=sendto;
+					document.getElementById("initial_bal_"+simcardno).innerHTML=balance;
+					document.getElementById("status_"+simcardno).innerHTML=sendto;
+					if(sendto==1){
+						document.getElementById("status_1_"+simcardno).value="Deactivate";
+					}else{
+						document.getElementById("status_1_"+simcardno).value="Activate";
+					}
 				}
 				else{
 					
@@ -47,3 +48,32 @@ var volunteer = null;
 		alert("Incorrect Balance Entered");
 	}
 }
+
+	function remove_me(c,simcardno){
+		var a = document.getElementById("simcardno_"+simcardno).innerHTML;
+		var updated=a;
+//			alert(updated);
+		if (window.XMLHttpRequest) {	// code for IE7+, Firefox, Chrome, Opera, Safari
+			var aa = new XMLHttpRequest();
+		}
+		else {							// code for IE6, IE5
+			var aa = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	
+	//alert ("submit_allotment.php?to_insert=" + to_send);
+		aa.open("GET", "remove_sim.php?to_insert=" + updated, true);
+		aa.send(null);
+		aa.onreadystatechange = function() {
+    		if(aa.readyState == 4 && aa.status == 200) {
+        		if(aa.responseText!=""){
+					var element=document.getElementById(a);
+					element.parentNode.removeChild(element);
+				}
+				else{
+					alert("Error,Reload and Try again.");
+				}
+    		}
+			else{
+			}
+		}
+	}

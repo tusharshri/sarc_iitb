@@ -1,0 +1,9 @@
+#title_bar{
+	min-height: 8%;
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	text-align: center;
+	vertical-align: center;
+	font-family: "arial",sans-serif;
+	padding-top:1%;
+}

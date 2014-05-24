@@ -16,13 +16,13 @@
 <div id="header">
 	<div id="logo">
 		<h1><a href="index.php">Phonathon</a></h1>
-		<h2>XXIII</h2>
+		<h2>XXIV</h2>
 	</div>
 	<div id="menu">
 		<ul>
 			<li class="active"><a href="./index.php" accesskey="1" title="">Home</a></li>
 			<li><a href="./gallery.php" accesskey="2" title="">Gallery</a></li>
-			<li><a href="./about.php" accesskey="3" title="">About</a></li>
+			<li><a href="./leaderboard.php" accesskey="3" title="">Leaderboard</a></li>
 			<li><a href="./contact.php" accesskey="4" title="">Contact</a></li>
 			
 		</ul>

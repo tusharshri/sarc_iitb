@@ -38,7 +38,11 @@
 		
 	</head>
 	<body>
-
+			<form action="addsim.php" method="POST" id="alumlist">
+				<label for="simnumber">SIM Number:</label>
+				<input name="simnumber" type="number" size="20px" id="simnumber" />
+				<input type="submit" value="Add Sim" size="20px" id="simnumber" />
+				</form>
 			<input type="hidden" name="order" id="order" value="<?php echo $column."_".$sel ?>" />
 			<table id="alumlist" style="display:block;float:none">
 				<tr class="head">
@@ -48,6 +52,7 @@
 					<th>Initial Balance</th>
 					<th>Current Balance</th>
                     <th>Change Status</th>
+                    <th>Remove Sim</th>
 				</tr>
 <?php
 		$index=0;
@@ -57,16 +62,17 @@
 
 ?>
 
-				<tr>
-					<td><?php if($volunteer):echo $volunteer[0]['name']; else: echo "Not Alloted"; endif;?></td>
-					<td name="simcardno"><?php echo $alum['simcardNo'] ?></td>
-					<td name="status"><?php echo $alum['status'] ?></td>
-					<td name="initial_bal"><?php echo $alum['balance'] ?></td>
-					<td><input type="text" name="balance" id="balance"></td>
-                    <td><input type="button" value="<?php if($alum['status']==0):?>Activate<?php else: ?> Deactivate <?php endif ?>" name="status_1" onclick="deactive(<?php echo $i++;?>);"></td>
+				<tr id="<?php echo $alum['simcardNo'];?>">
+					<td id="<?php echo 'volunteername_'.$alum['simcardNo'];?>"><?php if($volunteer&&$alum['status']==1):echo $volunteer[0]['name']; else: echo "Not Alloted"; endif;?></td>
+					<td id="<?php echo 'simcardno_'.$alum['simcardNo'];?>"><?php echo $alum['simcardNo'] ?></td>
+					<td id="<?php echo 'status_'.$alum['simcardNo'];?>"><?php echo $alum['status'] ?></td>
+					<td id="<?php echo 'initial_bal_'.$alum['simcardNo'];?>"><?php echo $alum['balance'] ?></td>
+					<td><input type="text" name="balance" id="<?php echo 'balance_'.$alum['simcardNo'];?>"></td>
+                    <td><input type="button" id="<?php echo 'status_1_'.$alum['simcardNo'];?>" value="<?php if($alum['status']==0):?>Activate<?php else: ?> Deactivate <?php endif ?>" onclick="deactive(<?php echo $i.','.$alum['simcardNo'];?>)"></td>
+                    <td><input type="button" name="remove_1" value="Remove" onclick="remove_me(<?php echo $i.','.$alum['simcardNo'];?>)"></td>
 				</tr>
 <?php
-	}	
+	$i++;}	
 ?>
 	</body>
 </html>

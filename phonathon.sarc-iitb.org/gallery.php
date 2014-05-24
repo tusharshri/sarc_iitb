@@ -4,7 +4,7 @@ include "header.php";
 		<div id="content">
 			<div class="post" style="padding-top: 57px;">
 				<h2 class="title">Gallery</h2>
-				<h3 class="date">Starting Date: 1st June 2013</h3>
+				<h3 class="date">Starting Date: Coming Soon!!!</h3>
 				<div class="entry" id="regisrt">
 					<!-- Slider goes here -->
 					
