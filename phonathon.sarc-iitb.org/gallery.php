@@ -4,7 +4,7 @@ include "header.php";
 		<div id="content">
 			<div class="post" style="padding-top: 57px;">
 				<h2 class="title">Gallery</h2>
-				<h3 class="date">Starting Date: Coming Soon!!!</h3>
+				<h3 class="date">Starting Date: 9th June</h3>
 				<div class="entry" id="regisrt">
 					<!-- Slider goes here -->
 					
@@ -20,36 +20,24 @@ include "header.php";
 					<li>
 						<a href="#" target="_blank"><img src="./images/2.jpg" alt="image2"/></a>
 						<div class="sb-description">
+							<h3>Volunteer of the Day Awards</h3>
+						</div>
+					</li>
+					
+					<li>
+						<a href="#" target="_blank"><img src="./images/3.jpg" alt="image2"/></a>
+						<div class="sb-description">
 							<h3>Calling in Phonathon</h3>
 						</div>
 					</li>
 					
 					<li>
-						<a href="#" target="_blank"><img src="./images/9.jpg" alt="image2"/></a>
+						<a href="#" target="_blank"><img src="./images/4.jpg" alt="image2"/></a>
 						<div class="sb-description">
-							<h3>Group Pic of Volunteers</h3>
+							<h3>A volunteer in deep work</h3>
 						</div>
 					</li>
 					
-					<li>
-						<a href="#" target="_blank"><img src="./images/8.jpg" alt="image2"/></a>
-						<div class="sb-description">
-							<h3>Phonathon Treat</h3>
-						</div>
-					</li>
-					
-					<li>
-						<a href="#" target="_blank"><img src="./images/3.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Phonathon Treat</h3>
-						</div>
-					</li>
-					<li>
-						<a href="#" target="_blank"><img src="./images/4.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Training Session by Expert</h3>
-						</div>
-					</li>
 					<li>
 						<a href="#" target="_blank"><img src="./images/5.jpg" alt="image1"/></a>
 						<div class="sb-description">
@@ -59,13 +47,25 @@ include "header.php";
 					<li>
 						<a href="#" target="_blank"><img src="./images/6.jpg" alt="image1"/></a>
 						<div class="sb-description">
-							<h3>Phonathon XVII Treat</h3>
+							<h3>Moment of the Day</h3>
 						</div>
 					</li>
 					<li>
 						<a href="#" target="_blank"><img src="./images/7.jpg" alt="image1"/></a>
 						<div class="sb-description">
-							<h3>Phonathon XVII Treat</h3>
+							<h3>Training Session by Expert</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="./images/9.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Volunteers of Phonathon on Treat in Rajdhani Hotel</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="./images/8.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Phonathon Volunteers come together</h3>
 						</div>
 					</li>
 				</ul>

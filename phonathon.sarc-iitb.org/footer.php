@@ -7,7 +7,7 @@
 					<ul>
 						<li class="first"><a href="http://www.sarc-iitb.org/" target="_blank">SARC-IITB</a></li>
 						<li><a href="./login-page-beta.php">Volunteer Login</a></li>
-						<li><a href="./registration-beta.php">Volunteer Registration</a></li>
+						<li><a href="./register.php">Volunteer Registration</a></li>
 						
 					</ul>
 				</li>

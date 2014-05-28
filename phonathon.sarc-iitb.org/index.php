@@ -4,7 +4,7 @@ include "header.php";
 		<div id="content">
 			<div class="post" style="padding-top: 57px;">
 				<h2 class="title">Welcome to Phonathon-24!</h2>
-				<h3 class="date">Coming Soon!!!</h3>
+				<h3 class="date">9th June-19th June,2014</h3>
 				<div class="entry">
 					<h2>Phonathon 24 </h2>
   
@@ -36,7 +36,7 @@ updated about IITB.
 Through this phonathon, student volunteers can connect to the alumni over a 
 period of a few days. It provides you a very good learning experience to 
 improve your communication skills and networking with alumni. A professional 
-training session by a renowned trainers will be organised before the phonathon 
+training session by a renowned trainer will be organised before the phonathon 
 which is mandatory for the volunteers as it provides an insight, giving our 
 telephonic conversations a professional touch. So this is a unique fun filled 
 learning opportunity for you to know some of the memorable experiences of 
@@ -46,19 +46,19 @@ alumni in their college days and to experience the experience of alumni.
 <p>
 <h3><b>Slot Structure:</b></h3><br>
 <ul>
-	<li>Every Slot will be of 120 minutes</li>
+	<li>Every slot will be of 120 minutes</li>
 	<li>The follow up mail will be a part of the call</li>
 </ul>
 </p>
 <p>
 <h3><b>Volunteer of the day:</b></h3><br>
 <ul>
-	<li>Decided on the basis of efficiency, number of calls made.</li>
-	<li>Goodies assured for volunteer of the day.</li>
+	<li>Decided on the basis of efficiency, number of calls made</li>
+	<li>Goodies assured for volunteer of the day</li>
 	</ul>
 </p>
 <p>
-<b>TREATS !!! assured to volunteers who complete minimum of five slots
+<b>TREATS !!! assured to volunteers who complete minimum of five slots.<br/>
 Refreshments for all the volunteers in every slot.
 </b>
 </p>
