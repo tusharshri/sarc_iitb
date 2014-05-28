@@ -13,7 +13,8 @@ include "header.php";
 				<h2 class="title">Register Here</h2>
 				<h3 class="date">Starting Date: 9th June 2014</h3>
 				<div class="entry" id="regisrt">
-					<iframe src="https://docs.google.com/forms/d/1RJJYMou8noCGQm2FXfTZHadtup4_NMh3rCxYdB87ewQ/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+				<p>Phonathon is an estimable event organised by SARC in which students of IITB engage in direct telephonic conversations with our alumni. With freebies, eateries and treats, phonathon is a perfect place to nurture your communication skills and get inspired by the alumnus. Go ahead and fill the form to register for the Phonathon.</p>
+					<iframe src="registration.php" width="600" height="1400">Loading...</iframe>
 				</div>
 				
 		</div>
@@ -22,14 +23,6 @@ include "header.php";
 		</div>
 		<!-- end contentn -->
 <hr />
-		<!-- end sidebar -->
-		<div style="clear: both;">&nbsp;</div>
-	</div>
-</div>
-<!-- end page -->
-<hr />
-<div id="footer">
-	<p>&copy; Web Team|| <a href="http://www.sarc-iitb.org/" target="_blank">SARC-IITB</a> || All rights reserved. </p>
-</div>
-</body>
-</html>
+<?php
+include "footer.php";
+?>
