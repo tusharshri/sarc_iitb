@@ -1,1 +1,0 @@
-<p><big>The list of mentors will be available from 6 p.m. today i.e.,20<sup>th</sup> Jan 2012.</big></p>

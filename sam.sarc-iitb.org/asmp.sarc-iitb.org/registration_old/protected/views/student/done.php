@@ -1,1 +1,0 @@
-You have already registered with ASMP and given your Preference.
