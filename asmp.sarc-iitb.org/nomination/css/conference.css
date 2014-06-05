@@ -1,0 +1,13 @@
+.join {
+	display: inline;
+}
+
+.quit {
+	display: none;
+}
+
+video {
+	float left;
+	margin: 10px;
+	width: 300px;
+}

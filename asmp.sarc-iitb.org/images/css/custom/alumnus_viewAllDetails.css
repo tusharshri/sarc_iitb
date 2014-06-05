@@ -1,0 +1,33 @@
+#basicDetails{
+    
+}
+
+th,td{
+    vertical-align:top;
+}
+
+thead{
+    background: none repeat scroll 0 0 #C3D9FF;
+}
+
+th:nth-child(1){
+    width: 300px;
+}
+
+td:nth-child(3){
+    width: 600px;
+}
+
+#profDetails tbody{
+    border:1px solid #AAF;
+}
+
+thead td:nth-child(3){
+    text-align:right;
+}
+
+span.asterisk{
+    color: #F11;
+    padding: 0 3px;
+    font-size: 10px;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<!--
+	TXT 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+		<title>ASMP | SARC</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/conference.js"></script>
+		<script type="text/javascript" src="https://api.bistri.com/bistri.conference.min.js"></script>
+		<script type="text/javascript">
+    
+	/*
+ * Need some explanations about this code ? Take a look at our API tutorial:
+ * https://api.developers.bistri.com/tutorial
+ */
+
+onBistriConferenceReady = function(){
+
+	// at first we test if the browser is WebRTC enable
+    if( !BistriConference.isCompatible() ){
+		alert( "your browser is not WebRTC compatible !" );
+		return;
+	}
+
+	window.localStreamReady = false;
+
+	/*
+     * this is the function called when the button "Join Conference" is pressed
+     */
+    window.joinRoom = function(){
+        
+        // if the local stream (webcam) is ready 
+		if( !window.localStreamReady ){
+			alert( "local media is not ready" );
+			return;
+		}
+        
+        // then when are ready to join the conference room called "myMeetingRoom"
+		BistriConference.joinRoom( "myMeetingRoom" );
+	};
+
+    /*
+     * this is the function called when the button "Quit Conference" is pressed
+     */
+	window.quitRoom = function(){
+        
+        // We stop calls with all conference room members
+		BistriConference.endCalls();
+        
+        // then we quit the conference room
+		BistriConference.quitRoom();
+	};
+
+	/*
+     * API is initialized with personal keys
+     * To get your own keys, go to https://api.developers.bistri.com/login
+     * debug is set to true to print some logs in the javascript console
+     */
+    BistriConference.init( {
+		// don't forget to replace the following keys by your own
+		appId: "989b3995",
+		appKey: "5e68c8850118ba00aba63ee40b744220",
+		debug: true
+	} );
+
+    /*
+     * we add a handler to manage "onConnected" event triggered by the signaling server
+     * this event occurs when user is connected to the signaling server
+     */
+	BistriConference.signaling.addHandler( "onConnected", function(){
+        
+        // we are now connected to the signaling server, 
+        // we can request access to the user webcam
+		BistriConference.startStream( "webcamSD" );
+	} );
+
+    /*
+     * we add a handler to manage "onJoinedRoom" event triggered by the signaling server
+     * this event occurs when user join the conference room
+     */
+	BistriConference.signaling.addHandler( "onJoinedRoom", function( result ){
+        
+        // we entered the conference room.
+        // we request a call start with every single member already present in the room
+		var roomMembers = result.members;
+		for( var i=0; i<roomMembers.length; i++ ){
+			BistriConference.call( roomMembers[ i ].id );
+		}
+        
+        // we hide "Join Conference" button
+		document.querySelector( ".join" ).style.display = "none";
+        
+        //  and show "Quit Conference" button
+		document.querySelector( ".quit" ).style.display = "inline";
+	} );
+
+    /*
+     * we add a handler to manage "onJoinRoomError" event triggered by the signaling server
+     * this event occurs when user fails to join the conference room
+     */
+	BistriConference.signaling.addHandler( "onJoinRoomError", function( data ){
+        
+        // we can't handle more than 4 participants in a same room (for performance issue)
+		if( data.members.length >= 4 ){
+			alert( "The conference room is full. Please, try again later." );
+		};
+	} );
+
+    /*
+     * we add a handler to manage "onQuittedRoom" event triggered by the signaling server
+     * this event occurs when user has quitted the conference room
+     */
+	BistriConference.signaling.addHandler( "onQuittedRoom", function( data ){
+        
+        // we hide "Quit Conference" button
+		document.querySelector( ".quit" ).style.display = "none";
+        
+        // and we show "Join Conference" button
+		document.querySelector( ".join" ).style.display = "inline";
+
+	} );
+
+    /*
+     * we add a handler to manage "onStreamAdded" event triggered by the stream manager
+     * this event occurs when a local or remote video stream is received
+     */
+	BistriConference.streams.addHandler( "onStreamAdded", function( stream, pid ){
+		
+        // if pid is undefined, then then stream received is the local one
+        if( !pid ){
+			window.localStreamReady = true;
+		}
+        
+		// we "insert" the video stream into a container
+        BistriConference.attachStream( stream, document.querySelector( '.video-container' ), {
+			// video auto start after being inserted
+            autoplay: true,
+            // video switch to fullscreen when user click on it
+			fullscreen: true
+		} );
+	} );
+
+    /*
+     * we add a handler to manage "onStreamClosed" event triggered by the stream manager
+     * this event occurs when a local or remote stream is closed
+     */
+	BistriConference.streams.addHandler( "onStreamClosed", function( stream, pid ){
+        
+        // we remove the video stream from the page
+		BistriConference.detachStream( stream );
+	} );
+
+    // we open a session on the signaling server
+	BistriConference.connect();
+
+}
+	
+</script>
+		
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<link rel="stylesheet" type="text/css" href="css/conference.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+	</head>
+	<body class="homepage">
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-panels-fixed">
+				<ul>
+					
+					<li><a class="scroll" data-speed="500" data-easing="easeInOutCubic" href="http://asmp.sarc-iitb.org/speed-mentoring">Speed Mentoring Home</a></li> 
+					<li><a class="scroll" data-speed="500" data-easing="easeInOutCubic" href="#prog">ASMP 2.0 | Private Video Conference</a></li>
+					<li><a class="scroll" data-speed="500" data-easing="easeInOutCubic" href="#team">Team</a></li>
+				
+				
+					
+				</ul>
+			</nav>
+		<!-- /Nav -->
+		<!-- Banner -->
+			
+				<section id="banner">
+					<div class="video-container"></div>
+					<a class="button" onclick="joinRoom();" class="join"><span style="color:white;">Join conference<span></a>
+					<a class="button" onclick="quitRoom();" class="quit"><span style="color:white;">Quit conference<span></a>
+				</section>
+			
+		<!-- /Banner -->
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container" >
+					<div class="row" id=prog >
+						<div class="12u">
+							
+							<!-- Highlight -->
+								<section class="is-highlight">
+									<header> </br>
+										<h2>ASMP 2.0 Portal | Private Video Conference </h2>
+									</header>
+									<p style="font-size:18px;">
+									<span style="font-weight:bold;"><span style="color:brown;">1. This is a private video conference portal developed especially to connect our mentors and mentees. </br></br>2. Built using Bistri WebRTC API, which enables a secure and encrypted connection, currently supporting video conference for upto 4 members.</br></br>3. This portal is compatible only with following browsers : Chrome 23+, Firefox 22+, Opera 18+ . You will be notified if your current browser in incompatible. </br></br> 4. This portal will be used to connect mentors and mentees participating in our new initiative - Speed Mentoring.</br></br> 5. Please feel free to bug us in case of any queries. Our contact details are provided below. </span></span>
+									</p>
+								</section>
+							<!-- /Highlight -->
+
+						</div>
+					</div>
+					
+				
+			<div id=team>
+			<footer id="footer" class="container" >
+				<div class="row">
+					<div class="12u" >
+
+						<!-- About -->
+							<section>
+							
+								<h2 class="major" ><span>Contact Details</span></h2>
+						
+								<img src="images/rohit-nana-wakode.jpg"  alt=""  /> 
+								<h3><a href="in.linkedin.com/pub/rohit-wakode/49/654/88b/">Rohit Wakode | ASMP Head</a></h3>
+								<p>rohitnwakode@gmail.com | +91 9004769371</p>
+								
+								<img src="images/tuhina-ghanty.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/tuhina.ghanty?fref=ts">Tuhina Ghanty | ASMP Head</a></h3>
+								<p>tuhinaghanty93@gmail.com | 
+								+91 9869610095</p>
+								
+								
+								<img src="images/vineet.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/vineet.maliekkal?fref=ts">Vineet Maliekkal | ASMP CTM</a></h3>
+								<p>vineetmaliekkal@gmail.com | 
+								+91 99304 00186</p>
+								<img src="images/aman.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/vineet.maliekkal?fref=ts">Aman Chaudhary | ASMP CTM</a></h3>
+								<p>amanchaudhary257@gmail.com | 
+								+91 97695 01715</p><img src="images/ashu.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/vineet.maliekkal?fref=ts">Ashu Bapna | ASMP CTM</a></h3>
+								<p>ashubapna10@gmail.com | 
+								+91 99202 26704</p>
+								<img src="images/neilabh.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/vineet.maliekkal?fref=ts">Neilabh Gupta | ASMP CTM</a></h3>
+								<p>neilabhgupta@gmail.com | 
+								+91 97694 70501</p>
+								<img src="images/pritish.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/vineet.maliekkal?fref=ts">Pritish Gupta | ASMP CTM</a></h3>
+								<p>imishu18@gmail.com | 
+								+91 91674 69055</p>
+								<img src="images/yashwanth.jpg"  alt="" /> 
+								<h3><a href="http://www.facebook.com/vineet.maliekkal?fref=ts">Yashwanth Sandupatla | ASMP CTM</a></h3>
+								<p>yashwanths.iitb@gmail.com | 
+								+91 77385 47537</p>
+								
+							
+							</section>
+						<!-- /About -->
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+									<li><a class="fa fa-facebook solo" href="http://www.facebook.com/ASMP>IITB"><span>Facebook</span></a></li>
+									<li><a class="fa fa-twitter solo" href="https://twitter.com/sarc_iitb"><span>Twitter</span></a></li>
+									<li><a class="fa fa-linkedin solo" href="http://www.linkedin.com/groups?mostPopular=&gid=3177153"><span>LinkedIn</span></a></li>
+								</ul>
+								<center>&copy; Student Alumni Relational Cell | by Web and Design team </center>
+							</section>
+						<!-- /Contact -->
+					
+					</div>
+				</div>
+
+			</footer>
+		<!-- /Footer -->
+		 <script src="js/jquery.transit.min.js"></script>
+    <script>
+		$(function() {
+    var BV = new $.BigVideo();
+    BV.init();
+    BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
+});
+</script>
+	</body>
+</html>

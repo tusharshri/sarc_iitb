@@ -1,0 +1,6 @@
+body {
+  background: #000 url(banner.jpg) » 
+center center fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+}
