@@ -27,14 +27,13 @@
 			$_SESSION['date']=$date;
 			$data_valid = TRUE;
 			if($_SESSION['role']=="volunteer"){
-				$balance=$_POST['balance'];
 				$simcardno=$_POST['simcardNo'];
 				$sim = $DBConn->get_array("SELECT status FROM simcard WHERE simcardNo = ?", array($simcardno));
 				$cardstatus=$sim[0]['status'];
-				if($cardstatus != NULL && $cardstatus==0&&(float)$balance>0){
+				if($cardstatus != NULL && $cardstatus==1){
 					$_SESSION['simcardnum']=$simcardno;
 					$DBConn->run_query ("INSERT INTO volunteer_attendance (volunteer_id,attendance_date,time_in,time_out) VALUES (?,?,?,?)", array($volunteer_id, $date,$time,0));
-					$DBConn->run_query ("UPDATE simcard SET balance = ?,volunteerId = ?, status = ? WHERE simcardNo = ?	", array($balance,$volunteer_id,'1',$simcardno));
+					$DBConn->run_query ("UPDATE simcard SET volunteerId = ? WHERE simcardNo = ?	", array($volunteer_id,$simcardno));
 				}
 				else{
 					$data_valid = FALSE;

@@ -3,7 +3,8 @@
 	error_reporting (E_ALL ^ E_NOTICE);
 	$page="design.php";
 	if (isset($_SESSION['user'])) {
-		header("Location: " . $_SESSION['role'] . "/design.php");
+		$_SESSION['role'] = "volunteer";
+		header("Location: volunteer/design.php");
 	}	
 	else{ 
 ?>
@@ -89,12 +90,6 @@
 				<td>Sim card No</td>
 				<td>
 					<input name="simcardNo" type="text" size="20px" id="simcardnoEntry"/>
-				</td>
-			</tr>
-			<tr>
-				<td>Balance</td>
-				<td>
-					<input name="balance" type="text" size="20px" id="balanceEntry"/>
 				</td>
 			</tr>
 			<?php 
