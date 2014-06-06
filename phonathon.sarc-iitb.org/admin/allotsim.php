@@ -68,7 +68,7 @@
 					<td id="<?php echo 'status_'.$alum['simcardNo'];?>"><?php echo $alum['status'] ?></td>
 					<td id="<?php echo 'initial_bal_'.$alum['simcardNo'];?>"><?php echo $alum['balance'] ?></td>
 					<td><input type="text" name="balance" id="<?php echo 'balance_'.$alum['simcardNo'];?>"></td>
-                    <td><input type="button" id="<?php echo 'status_1_'.$alum['simcardNo'];?>" value="<?php if($alum['status']==0):?>Activate<?php else: ?> Deactivate <?php endif ?>" onclick="deactive(<?php echo $i.','.$alum['simcardNo'];?>)"></td>
+                    <td><input type="button" id="<?php echo 'status_1_'.$alum['simcardNo'];?>" value="<?php if($alum['status']==0):?>Activate<?php elseif($alum['status']==1): ?> Deactivate <?php else: ?>Close<?php endif ?>" onclick="deactive(<?php echo $i.','.$alum['simcardNo'];?>)"></td>
                     <td><input type="button" name="remove_1" value="Remove" onclick="remove_me(<?php echo $i.','.$alum['simcardNo'];?>)"></td>
 				</tr>
 <?php

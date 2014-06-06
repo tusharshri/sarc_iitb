@@ -11,7 +11,7 @@
   require_once ("../dbconnection.php");
   $DBConn = new Connection();
   
-  $alumlist = $DBConn->get_array("SELECT firstname, middlename, lastname, alumnus_basicdetail.PID, department, class, degree, city, country, status, mailed FROM alumnus_basicdetail JOIN alumnus_contactdetail ON alumnus_basicdetail.PID=alumnus_contactdetail.PID JOIN allotment ON alumnus_basicdetail.PID=allotment.PID JOIN calllog ON alumnus_basicdetail.PID=calllog.PID WHERE volunteer_id = ? ORDER BY status ASC", array($user));
+  $alumlist = $DBConn->get_array("SELECT firstname, middlename, lastname, alumnus_basicdetail.PID, department, class, degree, city, country, status, mailed FROM alumnus_basicdetail JOIN alumnus_contactdetail ON alumnus_basicdetail.PID=alumnus_contactdetail.PID JOIN allotment ON alumnus_basicdetail.PID=allotment.PID JOIN calllog ON alumnus_basicdetail.PID=calllog.PID ORDER BY status ASC");
 ?>
 <html>
   <head>

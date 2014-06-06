@@ -4,16 +4,19 @@ var volunteer = null;
 		var sendto;
 		var a = document.getElementById("simcardno_"+simcardno).innerHTML;
 		var b = parseInt(document.getElementById("status_"+simcardno).innerHTML);
-		if(b==0){
-			sendto=1;
-		}else{
-			sendto=0;
-		}
 		var initial_bal = document.getElementById("initial_bal_"+simcardno).innerHTML;
 		var balance = document.getElementById("balance_"+simcardno).value.trim();
+		if(b==0){
+			sendto=1;
+		}else if(b==1){
+			sendto=2;
+		}else{
+			sendto = 0;
+			balance = 0;
+		}
 		document.getElementById("balance_"+simcardno).value= "";
 //		alert(initial_bal+","+balance);
-		if((parseInt(initial_bal)>=parseInt(balance)&&sendto==0)||sendto==1&&parseInt(balance)>0&&balance!=""){ 
+		if((parseInt(initial_bal)>=parseInt(balance)&&sendto==2)||(sendto==1&&parseInt(balance)>0)||sendto==0){ 
 			var updated=sendto+'|'+a+'|'+balance;
 //			alert(updated);
 			if (window.XMLHttpRequest) {	// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -34,8 +37,10 @@ var volunteer = null;
 					document.getElementById("status_"+simcardno).innerHTML=sendto;
 					if(sendto==1){
 						document.getElementById("status_1_"+simcardno).value="Deactivate";
-					}else{
+					}else if(sendto ==0){
 						document.getElementById("status_1_"+simcardno).value="Activate";
+					}else{
+						document.getElementById("status_1_"+simcardno).value="Close";
 					}
 				}
 				else{
