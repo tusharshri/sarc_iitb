@@ -4,7 +4,7 @@
   if (isset ($_SESSION['PID'])) header ("Location: alumnus.php?PID=" . $_SESSION['PID']);
   $role = $_SESSION['role'];
   $curdir = getcwd();
-  if ($role == basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
+  if ($role != basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
   
   $user = $_SESSION['user'];
   

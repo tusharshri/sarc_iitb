@@ -9,7 +9,7 @@
     header("Location:locked.php");
   }
     else {
-    if ($role == basename($curdir)) header ("Location: ../$role/" . basename ($_SERVER["SCRIPT_NAME"]));
+    if ($role != basename($curdir)) header ("Location: ../$role/" . basename ($_SERVER["SCRIPT_NAME"]));
 ?>
 <html>
   <head>

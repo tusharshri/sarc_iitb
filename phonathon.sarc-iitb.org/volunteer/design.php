@@ -4,7 +4,7 @@
   $role = $_SESSION['role'];
   $curdir = getcwd();
   $enable = $_SESSION['enable'];
-  if (!($role == basename($curdir))){ header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));}
+  if (!($role != basename($curdir))){ header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));}
 ?>
 <html>
   <head>

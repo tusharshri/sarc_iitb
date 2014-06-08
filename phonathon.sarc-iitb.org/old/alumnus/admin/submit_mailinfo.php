@@ -5,7 +5,7 @@
 	$PID = $_SESSION['PID'];
 	$role = $_SESSION['role'];
 	$curdir = getcwd();
-	if ($role == basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
+	if ($role != basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
 	
 	if ($_GET['gotreply'] == "on") $gotreply = 1;
 	else $gotreply = 0;

@@ -3,7 +3,6 @@
 	error_reporting (E_ALL ^ E_NOTICE);
 	$page="design.php";
 	if (isset($_SESSION['user'])) {
-		$_SESSION['role'] = "volunteer";
 		header("Location: volunteer/design.php");
 	}	
 	else{ 
