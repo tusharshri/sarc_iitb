@@ -12,6 +12,7 @@
 		$_SESSION=array();
 		session_destroy();
 	}
+	$_SERVER["SCRIPT_NAME"] = "";
 	header("Location: index.php");
 
 ?>

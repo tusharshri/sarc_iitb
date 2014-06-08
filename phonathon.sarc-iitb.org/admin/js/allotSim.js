@@ -32,9 +32,9 @@ var volunteer = null;
 		aa.onreadystatechange = function() {
     		if(aa.readyState == 4 && aa.status == 200) {
         		if(aa.responseText!=""){
-//					alert(aa.responseText);
 					document.getElementById("initial_bal_"+simcardno).innerHTML=balance;
 					document.getElementById("status_"+simcardno).innerHTML=sendto;
+					document.getElementById("volunteername_"+simcardno).innerHTML=aa.responseText;
 					if(sendto==1){
 						document.getElementById("status_1_"+simcardno).value="Deactivate";
 					}else if(sendto ==0){

@@ -3,7 +3,7 @@
   if (! isset($_SESSION['user'])) header ("Location: ../login.php");
   $role = $_SESSION['role'];
   $curdir = getcwd();
-  if ($role != basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
+  if ($role == basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
   $user = $_SESSION['user'];
   
   $PID = $_GET['PID'];
@@ -71,6 +71,7 @@
 <?php
   $basicdetails = $DBConn->get_array("SELECT * FROM alumnus_basicdetail WHERE PID=?", array($PID));
   $basicdetails = $basicdetails[0];
+  $category = $basicdetails['category'];
 ?>
                   <td>Profile ID</td>
                   <td><?php echo $basicdetails['PID'] ?></td>
@@ -473,7 +474,7 @@
 			</tr>
             <tr>
               <td>Remarks</td>
-              <td><textarea name="remarks" style="width: 369px; height: 212px;"><?php echo nl2br ($otherdetails['remarks']) ?></textarea></td>
+              <td><textarea name="remarks" style="width: 300px; height: 212px;"><?php echo nl2br ($otherdetails['remarks']) ?></textarea></td>
             </tr>
 <?php
   }
@@ -613,21 +614,23 @@
           <table>
 <?php
   foreach ($agenda as $agendapoint) {
-    if ($status != "Ongoing") {
+    if(in_array($agendapoint['category'],array(0,$category))){
+      if ($status != "Ongoing") {
 ?>
             <tr>
               <td><?php echo $agendapoint['agenda'] ?></td>
               <td><?php if($agendapoint['PID'] != null) echo "Yes"; else echo "No" ?></td>
             </tr>
 <?php
-    }
-    else {
+      }
+      else {
 ?>
             <tr>
               <td><?php echo $agendapoint['agenda'] ?></td>
               <td><?php if($agendapoint['PID'] != null) echo "Yes"; else echo "<input type=\"checkbox\" name=\"" . $agendapoint['agenda_id'] . "\" />" ?></td>
             </tr>
 <?php
+      }
     }
   }
 ?>

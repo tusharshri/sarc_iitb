@@ -1,7 +1,10 @@
 <?php
-$host = 'admin.sarc-iitb.org';
-$user = 'sarciitborg';
-$pass = 'j@g@njyoti';
+// $host = 'admin.sarc-iitb.org';
+// $user = 'sarciitborg';
+// $pass = 'j@g@njyoti';
+$host = 'localhost';
+$user = 'root';
+$pass = '';
 $db = 'phonathon';
 $file = 'export';
 

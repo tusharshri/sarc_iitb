@@ -5,7 +5,7 @@ session_start();
   if (! isset($_SESSION['user'])) header ("Location: ../login.php");
   $role = $_SESSION['role'];
   $curdir = getcwd();
-  if ($role != basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
+  if ($role == basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
   $user = $_SESSION['user'];
 
   $PID = $_SESSION['PID'];
@@ -61,13 +61,17 @@ else{
   if (count ($alum) == 0) header ("Location: alumni.php");
 
     $basic_detail=$basic_detail[0];
+    $category = $basic_detail['category'];
 
     $volunteer=$volunteer[0];
   $contacted = $alum['contacted'];
   $reach = $alum['couldntreach'];
-
+  $reunion = false;
     if($contacted==1){
-        $agendas = $DBConn->get_array("SELECT * FROM alumnus_agendaconfirmation WHERE PID = ?", array($PID));
+        $agendas = $DBConn->get_array("SELECT * FROM alumnus_agendaconfirmation WHERE PID = ? AND agenda_id = ?", array($PID,1));
+        if($agendas){
+          $reunion = true;
+        }
     }
   
 ?>
@@ -127,72 +131,70 @@ else{
 <div>       <span style="font-size:16px">To, <?php echo $to; ?></span> <br>
       <textarea id="elm1" name="elm1" rows="30" cols="80" style="width: 80%">
                Dear <?php echo $basic_detail['firstname']." ".$basic_detail['lastname'].","; ?>
-<?php
-                if($contacted=="1"){
+        <?php
+          if($contacted==1){
 
                 ?>
                 <p&gt;
-          Thank you for your time, it was a pleasure talking to you. I had called you on behalf of Student Alumni Relations Cell (SARC), as a part of the ongoing March Phonathon.
+          Thank you for your time, I called you on behalf of Student Alumni Relations Cell (SARC), as a part of the ongoing Phonathon and it was a pleasure talking to you.
+          Hereby I am mentioning the links to our initiatives for your reference.
 
         </p&gt;
+        <?php
+          if($category == 1 ){
+            if($reunion){
+        ?>
 		<p&gt;
-          Thank you for showing your interest in the Silver jubilee Reunions to be held on the last weekend of December this year. We will soon be updating you with the progress regarding the same. 
+          As you know, we are planning reunion of your batch. We would highly appreciate if you could be a part of organising committee and help IITB Alumni Association in the planning of your reunion.
         </p&gt;
-		<p&gt;
-          We will also be having our Alumni Day on December 28th at the time of the SJRU reunions. Do try to join in, and if not, and also, spread the word among your friends. But in case you are not able to join us, you can see the pics and videos later on our website later on.
+        <p&gt;
+        You can fill the form for the same <a href="http://tinyurl.com/obonjuf" &gt; here </a&gt; . 
         </p&gt;
-		<p&gt;
-          If you are interested in providing internships/projects or placement opportunities at your company/university, just reply to this mail. We will put you in touch with our placement cell regarding the same.
-        </p&gt;
-			
-			<p&gt;
-		Also, remember to keep your personal details complete and up to date in the Alumni Directory. You can do so on -  
-		<a href="http://www.iitbombay.org/online-community/alumni-directory"&gt; http://www.iitbombay.org/online-community/alumni-directory </a&gt;
-		
-		or write to directory@iitbombay.org You can be a part of IITB online community. Visit <a href="http://www.iitbombay.org/online-community"&gt; http://www.iitbombay.org/online-community </a&gt;
+        <?php
+            }
+            else{
 
-		
-		</p&gt;
-		
-        
-                    <?php
-          
-        $agenda_one=false;
-    $agendalist=''; /*
-   for($i=0; $i<count($agendas); $i++){
-        
-   
-        if($agendas[$i]['agenda_id']==4){//mock interview
-                    ?>
+        ?>
+        <p&gt; As you know, we are planning reunion of your batch, with a plethora of events planned to recollect memories of your student life, this would definitely be a wonderful experience for you and your family. Its nostalgic, all being back together.
+        </p&gt;
+        <p&gt;
+Last year, we were very successful in organizing reunions of batches of 1988 and 2003. Alumni interacted with students, played sports, visited their hostels and departments.
+</p&gt;
 <p&gt;
-	If you have pledged and haven’t made the donations as per Give One initiative, or you wish to donate sometime soon then here is the link for your reference  <a href="http://iitbombay.org/giving-back/give-one"&gt; http://iitbombay.org/giving-back/give-one </a&gt;. </p&gt;
+So, would you be interested in coming down to your alma mater and  on us on this wonderful happening, meet your friends, connect with them once more? You can fill <a href="http://tinyurl.com/obonjuf"&gt; here </a&gt;
+</p&gt;
 
+      <?php
+            }
+      ?> 
+     
+		<p&gt;
+          You can be a mentor and guide to students and help them in choosing future career options on a one to one basis. For more information about Alumni Student Mentorship Program(ASMP) visit <a href="http://asmp.sarc-iitb.org/" &gt; http://asmp.sarc-iitb.org/ </a&gt; .
+          The next phase starts in August 2014.
+        </p&gt;
 
-                    <?php
-                } 
-        else if($agendas[$i]['agenda_id']==3){
-          ?>
-
-           <p&gt; You can also be a mentor and guide current students of IITB in choosing future career options on a one to one basis in person or via email/skype. For more information about Alumni Student Mentorship Program(ASMP) and to register as a mentor,visit   <a href='http://www.sarc-iitb.org/mentorship.php' &gt; http://www.sarc-iitb.org/mentorship.php</a&gt;. The next phase starts in July 2013.</p&gt;
-        <?php 
-          }
-      else if($agendas[$i]['agenda_id']==2){
-          ?>
-            <p&gt;If you are interested in becoming an interviewer for Mock Interviews wherein you get to interview current passing out junta of the institute, please fill this form up. <a href="http://goo.gl/ulp4p" &gt; http://goo.gl/ulp4p </a&gt; For more information on Mock interviews visit <a href="http://sam.sarc-iitb.org/events.php?q=mock-interviews" &gt; http://sam.sarc-iitb.org/events.php?q=mock-interviews </a&gt; </p&gt;         
-          <?php 
-      }
-      else if($agendas[$i]['agenda_id']==1){
-          ?>
-          <p&gt; In case there is any information of yours that you would like to update in the alumni directory please visit
- <a href="http://www.iitbombay.org/online-community/alumni-directory" &gt; http://www.iitbombay.org/online-community/alumni-directory </a&gt; .</p&gt;
-          <?php 
-      } 
-          ?>
-          
-                
-<?php
-   }*/
+<?php  
+        }
+        else{
 ?>
+<p&gt;
+You can be a mentor and guide students in choosing future career options on a one to one basis. 
+For more information about Alumni Student Mentorship Program(ASMP) visit <a href="http://asmp.sarc-iitb.org/" &gt; http://asmp.sarc-iitb.org/ </a&gt; .
+The next phase starts in August 2014. You can fill this if you are interested in being a mentor <a href="http://tinyurl.com/kj7bd48" &gt; here </a&gt;
+</p&gt;
+<?php
+          }
+          ?>
+
+
+<p&gt;
+    Also, remember to keep your personal details complete and up to date in the Alumni Directory. You can do so on -  
+    <a href="http://www.iitbombay.org/online-community/alumni-directory"&gt; http://www.iitbombay.org/online-community/alumni-directory </a&gt;
+    
+    or write to directory@iitbombay.org You can be a part of IITB online community. Visit <a href="http://www.iitbombay.org/online-community"&gt; http://www.iitbombay.org/online-community </a&gt;
+
+    
+    </p&gt;
 
 <p&gt;You can be a part of IITB social networks on<br/> <a href="http://www.linkedin.com/groupInvitation?gid=3269&sharedKey=761B600FE619" &gt; Linkedin </a&gt; , <a href="https://www.facebook.com/groups/iitmumbai/" &gt; Facebook </a&gt; , <a href="https://twitter.com/iitbombay " &gt; Twitter </a&gt; , <a href="http://www.youtube.com/iitbombay" &gt; Youtube  </a&gt; 
 
@@ -200,8 +202,7 @@ else{
 
 <p&gt;Hope you liked talking to us as much as we did talking to you.</p&gt;
 
-<?php  
-
+          <?php
 }
                 else if(!empty($reach) && $reach!="" && $reach!=NULL){
                     ?>
@@ -212,24 +213,40 @@ else{
 
         </p&gt;
 		<p&gt;
-          We had called you on behalf of The Student Alumni Relations Cell (SARC), IIT Bombay as a part of the ongoing March Phonathon, but were unable to reach you. Hereby I am mentioning the links to our initiatives for your reference.
-
-
-
-        </p&gt;
+          We had called you on behalf of The Student Alumni Relations Cell (SARC), IIT Bombay as a part of the ongoing June Phonathon, but were unable to reach you.
+    </p&gt;
+    <?php
+    if($category == 1){
+      ?>  
 		<p&gt;
-          This year your batch will behaving the Silver jubilee Reunions to be held on the last weekend of December this year. We will soon be updating you with the progress regarding the same. 
-
-
-        </p&gt;
+          We are planning reunion of your batch. With a plethora of events planned in order to recollect memories of your student life, this would definitely be a wonderful experience for you and your family. Its nostalgic, all being back together.
+    </p&gt;
+    <p&gt;
+      Last year, we were very successful in organizing reunions of batches of 1988 and 2003. Alumni interacted with students, played sports, visited their hostels and departments.
+    </p&gt;
+    <p&gt;
+      You must be interested in coming down to your alma mater and  on us on this wonderful happening, meet your friends, connect with them once more.
+      Also, we would highly appreciate if you could be a part of organising committee and help IITB Alumni Association in the planning of your reunion.
+    </p&gt;
 		<p&gt;
-          We will also be having our Alumni Day on December 28th at the time of the SJRU reunions. Do try to join in, and if not, and also, spread the word among your friends. But in case you are not able to join us, you can see the pics and videos later on our website later on.
-
-
-        </p&gt;
+          You can be a mentor and guide current students in choosing future career options on a one to one basis. For more information about Alumni Student Mentorship Program(ASMP) visit <a href="http://asmp.sarc-iitb.org/" &gt; http://asmp.sarc-iitb.org/ </a&gt; . 
+          The next phase starts in August 2014.
+    </p&gt;
 		<p&gt;
-		If you are interested in providing internships/projects or placement opportunities at your company/university, just reply to this mail. We will put you in touch with our placement cell regarding the same.
+		You can fill the form for the same <a href="http://tinyurl.com/obonjuf" &gt; here </a&gt; .
 		</p&gt;
+
+    <?php
+      }else{
+    ?>
+<p&gt;
+You can be a mentor and guide students in choosing future career options on a one to one basis. 
+For more information about Alumni Student Mentorship Program(ASMP) visit <a href="http://asmp.sarc-iitb.org/" &gt; http://asmp.sarc-iitb.org/ </a&gt; .
+The next phase starts in August 2014. You can fill this if you are interested in being a mentor <a href="http://tinyurl.com/kj7bd48" &gt; here </a&gt;
+</p&gt;
+    <?php
+      }
+    ?>
 		
 		<!-- insert here -->
 		<p&gt;

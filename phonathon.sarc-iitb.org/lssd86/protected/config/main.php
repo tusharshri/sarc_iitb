@@ -56,10 +56,16 @@ return array(
             'class'=>'CDbCache',
         ),
 		'db'=>array(
+			/*
 			'connectionString' => 'mysql:host=admin.sarc-iitb.org;dbname=phonathon_21_1',
 			'emulatePrepare' => true,
 			'username' => 'sarciitborg',
 			'password' => 'j@g@njyoti',
+			*/
+			'connectionString' => 'mysql:host=localhost;dbname=phonathon_21_1',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
 			'schemaCachingDuration'=>3600,
 		),

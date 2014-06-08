@@ -22,7 +22,6 @@
 		<ul>
 			<li class="active"><a href="./index.php" accesskey="1" title="">Home</a></li>
 			<li><a href="./gallery.php" accesskey="2" title="">Gallery</a></li>
-			<li><a href="./leaderboard.php" accesskey="3" title="">Leaderboard</a></li>
 			<li><a href="./contact.php" accesskey="4" title="">Contact</a></li>
 			
 		</ul>

@@ -1,5 +1,6 @@
 <?php 
-$con = mysql_connect("admin.sarc-iitb.org","sarciitborg","j@g@njyoti");
+// $con = mysql_connect("admin.sarc-iitb.org","sarciitborg","j@g@njyoti");
+$con = mysql_connect("localhost","root","");
 $db = mysql_select_db("phonathon_h7",$con);
 $query = mysql_query("SELECT * 
 FROM  `alumnus_phonenum`   WHERE PID in (44, 18, 58, 99, 46, 5, 50, 195, 238, 321, 329, 269, 1, 131, 162, 126, 134, 318, 245, 232, 240, 369, 366, 201, 236, 231) && phnum_detail LIKE 'Secondary' ORDER BY PID ") or die(mysql_error());

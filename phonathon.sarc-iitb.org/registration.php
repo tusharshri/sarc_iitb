@@ -154,12 +154,12 @@ function onlyTextNumSym(text) {
 }
 
 function rollnum(rollnum) {
-  var allowed = "0123456789dD";
+  var allowed = "0123456789dDkKpPiI";
   for (var i = 0; i<rollnum.length; i++) {
     var c = rollnum.charAt (i);
     if (allowed.indexOf(c) == -1) return false;
   }
-  if(rollnum.length>11 || rollnum.length<8) return false;
+  if((rollnum.length>11 || rollnum.length<8) && (rollnum.indexOf(p)== -1 || rollnum.indexOf(P) == -1)) return false;
   return true;
 }
 
@@ -388,6 +388,8 @@ if(isset($_POST['registration'])){
 			<option value="M.Tech.">M.Tech.</option>
 			<option value="M.Mgt.">M.Des.</option>
 			<option value="Ph.D.">Ph.D.</option>
+      		<option value="M.Sc.+M.Tech.">M.Sc.+M.Tech.</option>
+      		<option value="Project Staff">Project Staff</option>
         	</select>
 	  </div>
     <label>Department<span class="asterix">*</span></label>

@@ -1,16 +1,16 @@
 <?php
 	class Connection {
 
-        private $server = "admin.sarc-iitb.org";
-		private $username = "sarciitborg";
-		private $password = "j@g@njyoti";
-		private $database = "phonathon_14";
-/*
+  //       private $server = "admin.sarc-iitb.org";
+		// private $username = "sarciitborg";
+		// private $password = "j@g@njyoti";
+		// private $database = "phonathon_14";
+
         private $server = "localhost";
 		private $username = "root";
 		private $password = "";
-		private $database = "phonathon_14_test";
-*/
+		private $database = "phonathon_14";
+
 		private $conn;
 		private $debug_mode = true;
 		private $die_message = "Sorry, there seems to be some error. This error has been noted and will be corrected soon.";

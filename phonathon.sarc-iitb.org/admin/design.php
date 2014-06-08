@@ -9,7 +9,7 @@
     header("Location:locked.php");
   }
     else {
-    if ($role != basename($curdir)) header ("Location: ../$role/" . basename ($_SERVER["SCRIPT_NAME"]));
+    if ($role == basename($curdir)) header ("Location: ../$role/" . basename ($_SERVER["SCRIPT_NAME"]));
 ?>
 <html>
   <head>
@@ -35,7 +35,9 @@
 			
 	<!--notification div to be placed here-->
 			<div class="notificationdiv"><span class="closenotification" onClick="$('.notificationdiv').fadeOut();"><u>X</u></span><br/>
-			<?php 	$con = mysql_connect("admin.sarc-iitb.org","sarciitborg","j@g@njyoti");
+			<?php 	
+        /* $con = mysql_connect("admin.sarc-iitb.org","sarciitborg","j@g@njyoti"); */
+          $con = mysql_connect("localhost","root","");
 					$db = mysql_select_db("phonathon_19",$con);
 					$query = mysql_query("SELECT * FROM notifications") or die(mysql_error());
 					while($array = mysql_fetch_array($query)){
@@ -57,7 +59,7 @@
               Administer
               <ul class="smenu">
                 <li><a onClick="selected(4); loadPage('allotment.php')">Allot</a></li>
-                                <li><a onClick="selected(4); loadPage('allotsim.php')">Allot Sim card</a></li>
+                <li><a onClick="selected(4); loadPage('allotsim.php')">Allot Sim card</a></li>
                 <li><a onClick="selected(4); loadPage('createvolunteer.php')">Create Volunteer</a></li>
                 <li><a onClick="selected(4); loadPage('allalumni.php')">All Alumni</a></li>
                 <li><a onClick="selected(4); loadPage('search.php')">Search</a></li>
@@ -65,6 +67,7 @@
               </ul>
             </a>
           </li>
+          <li><a onClick="selected(5); loadPage('leaderboard.php')">Leaderboard</a></li>
           <li id="logout"><a class="logout" onClick="logout()">Logout</a></li>
         </ul>
       </div>

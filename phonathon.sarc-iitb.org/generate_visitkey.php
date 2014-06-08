@@ -1,6 +1,7 @@
 <?php
 
-mysql_connect('admin.sarc-iitb.org','sarciitborg','j@g@njyoti') or die(mysql_error());
+// mysql_connect('admin.sarc-iitb.org','sarciitborg','j@g@njyoti') or die(mysql_error());
+mysql_connect('localhost','root','') or die(mysql_error());
 mysql_select_db('phonathon_14') or die(mysql_error());
 
 $ids=mysql_query("SELECT PID FROM alumnus_basicdetail WHERE PID NOT IN (SELECT PID FROM alumnus_visitedlinks)") or die(mysql_error());

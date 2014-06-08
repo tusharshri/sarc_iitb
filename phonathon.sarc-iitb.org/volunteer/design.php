@@ -4,7 +4,7 @@
   $role = $_SESSION['role'];
   $curdir = getcwd();
   $enable = $_SESSION['enable'];
-  if ($role != basename($curdir)) header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));
+  if (!($role == basename($curdir))){ header ("Location: ../$role/" . basename($_SERVER["SCRIPT_NAME"]));}
 ?>
 <html>
   <head>
@@ -28,7 +28,10 @@
                 </ul>
             </div>
 		<div class="notificationdiv"><span class="closenotification" onClick="$('.notificationdiv').fadeOut();"><u>X</u></span><br/>
-			<?php 	$con = mysql_connect("admin.sarc-iitb.org","sarciitborg","j@g@njyoti");
+			<?php 
+/*	$con = mysql_connect("admin.sarc-iitb.org","sarciitborg","j@g@njyoti"); */
+
+       $con = mysql_connect("localhost","root","");
 					$db = mysql_select_db("phonathon_20_1",$con);
 					$query = mysql_query("SELECT * FROM notifications") or die(mysql_error());
 					while($array = mysql_fetch_array($query)){
@@ -39,8 +42,8 @@
 		</div>
       <div id="pmenu">
         <ul>
-          <li class="selected"><a onClick="selected(0); loadPage('pending.php')">Pending of the Day</a></li>
-          <li><a onClick="selected(1); loadPage('alumni.php')">Alumni Allotted</a></li>
+          <li><a onClick="selected(0); loadPage('pending.php')">Pending of the Day</a></li>
+          <li class="selected"><a onClick="selected(1); loadPage('alumni.php')">Alumni Allotted</a></li>
           <li><a onClick="selected(2); loadPage('mydetails.php')">My Details</a></li>
           <li id="logout"><a class="logout" onClick="logout()">Logout</a></li>
         </ul>
